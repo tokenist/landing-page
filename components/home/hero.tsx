@@ -1,8 +1,9 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { Trans } from "@lingui/react/macro";
 import { motion } from "framer-motion";
-import { Sparkles, Database, BarChart3, Workflow, Shield } from "lucide-react";
+import { BarChart3, Database, Shield, Sparkles, Workflow } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -33,7 +34,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 px-4 py-2 text-sm"
               >
                 <Sparkles className="h-4 w-4" />
-                Enterprise Solutions
+                <Trans>Enterprise Solutions</Trans>
               </Badge>
             </motion.div>
 
@@ -48,8 +49,11 @@ export default function Hero() {
                 id="main-title"
                 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl"
               >
-                Transform Your <strong>Business</strong> <span>&</span> <br />
-                <strong>Data</strong> <em className="italic">Intelligently</em>
+                <Trans>
+                  Transform Your <strong>Business</strong> <span>&</span> <br />
+                  <strong>Data</strong>{" "}
+                  <em className="italic">Intelligently</em>
+                </Trans>
               </h1>
             </motion.div>
 
@@ -60,9 +64,12 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground"
             >
-              Leading enterprise software solutions in ERP systems, Big Data
-              analytics, modern website design, and artificial intelligence.
-              Streamline operations and unlock insights for sustainable growth.
+              <Trans>
+                Leading enterprise software solutions in ERP systems, Big Data
+                analytics, modern website design, and artificial intelligence.
+                Streamline operations and unlock insights for sustainable
+                growth.
+              </Trans>
             </motion.p>
 
             <motion.div
@@ -109,7 +116,7 @@ export default function Hero() {
                           <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                           <path d="M2 12h20"></path>
                         </svg>
-                        Explore Solutions
+                        <Trans>Explore Solutions</Trans>
                       </p>
                     </div>
                     <div className="text-muted-foreground group-hover:ml-4 ease-in-out transition-all size-[24px] flex items-center justify-center rounded-full border-2 border-border">
@@ -144,7 +151,9 @@ export default function Hero() {
           >
             <div className="text-center">
               <p className="text-sm text-muted-foreground mb-8">
-                Comprehensive ERP Solutions for Modern Enterprises
+                <Trans>
+                  Comprehensive ERP Solutions for Modern Enterprises
+                </Trans>
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                 {/* Financial Management */}
@@ -157,8 +166,14 @@ export default function Hero() {
                   <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
                     <BarChart3 className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-sm text-foreground mb-1">Financial Management</h3>
-                  <p className="text-xs text-muted-foreground text-center">Comprehensive accounting & financial reporting</p>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">
+                    <Trans>Financial Management</Trans>
+                  </h3>
+                  <p className="text-xs text-muted-foreground text-center">
+                    <Trans>
+                      Comprehensive accounting & financial reporting
+                    </Trans>
+                  </p>
                 </motion.div>
 
                 {/* Data Analytics */}
@@ -171,8 +186,12 @@ export default function Hero() {
                   <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
                     <Database className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-sm text-foreground mb-1">Data Analytics</h3>
-                  <p className="text-xs text-muted-foreground text-center">Real-time insights & business intelligence</p>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">
+                    <Trans>Data Analytics</Trans>
+                  </h3>
+                  <p className="text-xs text-muted-foreground text-center">
+                    <Trans>Real-time insights & business intelligence</Trans>
+                  </p>
                 </motion.div>
 
                 {/* Process Automation */}
@@ -185,8 +204,12 @@ export default function Hero() {
                   <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
                     <Workflow className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-sm text-foreground mb-1">Process Automation</h3>
-                  <p className="text-xs text-muted-foreground text-center">Streamlined workflows & operations</p>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">
+                    <Trans>Process Automation</Trans>
+                  </h3>
+                  <p className="text-xs text-muted-foreground text-center">
+                    <Trans>Streamlined workflows & operations</Trans>
+                  </p>
                 </motion.div>
 
                 {/* Security & Compliance */}
@@ -199,8 +222,12 @@ export default function Hero() {
                   <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
                     <Shield className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-sm text-foreground mb-1">Security & Compliance</h3>
-                  <p className="text-xs text-muted-foreground text-center">Enterprise-grade security standards</p>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">
+                    <Trans>Security & Compliance</Trans>
+                  </h3>
+                  <p className="text-xs text-muted-foreground text-center">
+                    <Trans>Enterprise-grade security standards</Trans>
+                  </p>
                 </motion.div>
               </div>
             </div>

@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils"
 interface EarthProps {
   className?: string
   theta?: number
-  dark?: number
   scale?: number
   diffuse?: number
   mapSamples?: number
@@ -20,7 +19,6 @@ interface EarthProps {
 const Earth: React.FC<EarthProps> = ({
   className,
   theta = 0.25,
-  dark = 1,
   scale = 1.1,
   diffuse = 1.2,
   mapSamples = 40000,
@@ -45,7 +43,7 @@ const Earth: React.FC<EarthProps> = ({
       height: width * 2,
       phi: 0,
       theta: theta,
-      dark: dark,
+      dark: 0,
       scale: scale,
       diffuse: diffuse,
       mapSamples: mapSamples,
@@ -69,7 +67,7 @@ const Earth: React.FC<EarthProps> = ({
     return () => {
       globe.destroy()
     }
-  }, [dark])
+  }, [])
 
   return (
     <div className={cn("z-[10] mx-auto flex w-full max-w-[350px] items-center justify-center", className)}>

@@ -1,7 +1,8 @@
 "use client";
 
+import { BackButton } from "@/components/back-button";
 import { motion } from "framer-motion";
-import { ArrowLeft, CheckCircle, Clock, Mail, Phone, Send } from "lucide-react";
+import { CheckCircle, Clock, Mail, Phone, Send } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -81,13 +82,7 @@ export default function ContactPage() {
             <img src="/logo.svg" alt="Tokenist" className="h-8 w-8" />
           </Link>
 
-          <Link
-            href="/"
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Link>
+          <BackButton />
         </div>
       </header>
 

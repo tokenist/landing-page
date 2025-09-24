@@ -331,11 +331,18 @@ export default function ERPPage() {
 
           <div className="relative">
             {/* Module Cards arranged in circle */}
-            <div className="relative w-full h-[400px] md:h-[700px]">
+            <div className="relative w-full flex flex-col md:flex-row gap-4 items-center">
               <Image
                 src="/erp-circle.png"
                 alt="ERP Circle"
-                className="m-auto"
+                className="m-auto w-full md:w-1/2"
+                width={600}
+                height={600}
+              />
+              <Image
+                src="/erp-pannel.png"
+                alt="ERP Pannel"
+                className="m-auto w-full md:w-1/2"
                 width={600}
                 height={600}
               />

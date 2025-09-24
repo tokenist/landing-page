@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, Mail, Phone, Send, MapPin, Clock, CheckCircle } from "lucide-react";
-import { useState } from "react";
+import { ArrowLeft, CheckCircle, Clock, Mail, Phone, Send } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -25,19 +25,19 @@ export default function ContactPage() {
     "AI & Machine Learning",
     "Digital Transformation",
     "Custom Software Development",
-    "Other"
+    "Other",
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     setIsSubmitted(true);
     setIsSubmitting(false);
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
@@ -53,7 +53,9 @@ export default function ContactPage() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     setFormData({
       ...formData,
@@ -76,9 +78,9 @@ export default function ContactPage() {
       <header className="sticky top-4 z-[9999] mx-4 md:mx-auto max-w-5xl">
         <div className="flex items-center justify-between rounded-full bg-background/80 backdrop-blur-sm border border-border/50 shadow-lg px-4 py-3">
           <Link href="/" className="flex items-center justify-center gap-2">
-            <img src="/logo.svg" alt="SVC" className="h-8 w-8" />
+            <img src="/logo.svg" alt="Tokenist" className="h-8 w-8" />
           </Link>
-          
+
           <Link
             href="/"
             className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"
@@ -130,8 +132,9 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
             >
-              Ready to transform your business with cutting-edge technology? Our team of experts 
-              is here to turn your vision into reality. Let's start the conversation.
+              Ready to transform your business with cutting-edge technology? Our
+              team of experts is here to turn your vision into reality. Let's
+              start the conversation.
             </motion.p>
           </motion.div>
 
@@ -147,7 +150,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-bold text-foreground mb-6 font-serif">
                   Get in Touch
                 </h3>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center">
@@ -155,7 +158,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-muted-foreground text-sm">Email</p>
-                      <p className="text-foreground font-medium">tokenist.solutions@gmail.com</p>
+                      <p className="text-foreground font-medium">
+                        tokenist.solutions@gmail.com
+                      </p>
                     </div>
                   </div>
 
@@ -165,7 +170,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-muted-foreground text-sm">Phone</p>
-                      <p className="text-foreground font-medium">+84 902 757 816</p>
+                      <p className="text-foreground font-medium">
+                        +84 902 757 816
+                      </p>
                     </div>
                   </div>
 
@@ -174,15 +181,21 @@ export default function ContactPage() {
                       <Clock className="w-4 h-4 text-accent" />
                     </div>
                     <div>
-                      <p className="text-muted-foreground text-sm">Business Hours</p>
-                      <p className="text-foreground font-medium">Mon - Fri, 9AM - 6PM</p>
+                      <p className="text-muted-foreground text-sm">
+                        Business Hours
+                      </p>
+                      <p className="text-foreground font-medium">
+                        Mon - Fri, 9AM - 6PM
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="bg-card backdrop-blur-sm border border-border rounded-2xl p-6 shadow-lg">
-                <h4 className="text-lg font-semibold text-foreground mb-4">Why Choose Us?</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-4">
+                  Why Choose Us?
+                </h4>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-accent" />
@@ -218,7 +231,8 @@ export default function ContactPage() {
                       Start Your Project
                     </h3>
                     <p className="text-muted-foreground mb-8">
-                      Fill out the form below and we'll get back to you within 24 hours.
+                      Fill out the form below and we'll get back to you within
+                      24 hours.
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
@@ -312,9 +326,15 @@ export default function ContactPage() {
                           onChange={handleChange}
                           className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50 transition-colors"
                         >
-                          <option value="" className="bg-background">Select a service</option>
+                          <option value="" className="bg-background">
+                            Select a service
+                          </option>
                           {services.map((service) => (
-                            <option key={service} value={service} className="bg-background">
+                            <option
+                              key={service}
+                              value={service}
+                              className="bg-background"
+                            >
                               {service}
                             </option>
                           ))}
@@ -371,9 +391,12 @@ export default function ContactPage() {
                     <div className="w-16 h-16 bg-green-500/10 border border-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircle className="w-8 h-8 text-green-500" />
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground mb-4">Message Sent!</h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-4">
+                      Message Sent!
+                    </h3>
                     <p className="text-muted-foreground mb-6">
-                      Thank you for reaching out. We'll get back to you within 24 hours.
+                      Thank you for reaching out. We'll get back to you within
+                      24 hours.
                     </p>
                     <div className="text-sm text-muted-foreground/60">
                       This form will reset automatically...

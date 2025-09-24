@@ -67,7 +67,7 @@ export default function Home() {
           }`}
           href="#"
         >
-          <img src="/logo.svg" alt="SVC" className="h-8 w-8" />
+          <img src="/logo.svg" alt="Tokenist" className="h-8 w-8" />
         </Link>
 
         <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-muted-foreground transition duration-200 hover:text-foreground md:flex md:space-x-2">

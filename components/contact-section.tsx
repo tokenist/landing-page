@@ -3,7 +3,7 @@
 import type React from "react";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
 export function ContactSection() {
@@ -103,7 +103,7 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-accent" />
                 </div>
@@ -113,7 +113,7 @@ export function ContactSection() {
                     123 Enterprise Blvd, Tech City, TC 12345
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
 

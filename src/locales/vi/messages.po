@@ -15,6 +15,14 @@ msgstr "Kế toán toàn diện và báo cáo tài chính"
 msgid "Comprehensive ERP Solutions for Modern Enterprises"
 msgstr "Giải pháp ERP toàn diện cho doanh nghiệp hiện đại"
 
+#: components/contact-section.tsx
+msgid "Call Us"
+msgstr "Gọi cho chúng tôi"
+
+#: components/contact-section.tsx
+msgid "Company Name"
+msgstr "Tên công ty"
+
 #: app/page.tsx
 #: app/page.tsx
 msgid "Contact"
@@ -23,6 +31,14 @@ msgstr "Liên hệ"
 #: components/home/hero.tsx
 msgid "Data Analytics"
 msgstr "Phân tích dữ liệu"
+
+#: components/contact-section.tsx
+msgid "Email Address"
+msgstr "Địa chỉ email"
+
+#: components/contact-section.tsx
+msgid "Email Us"
+msgstr "Gửi email cho chúng tôi"
 
 #: components/home/hero.tsx
 msgid "Enterprise Solutions"
@@ -39,6 +55,14 @@ msgstr "Khám phá giải pháp"
 #: components/home/hero.tsx
 msgid "Financial Management"
 msgstr "Quản lý tài chính"
+
+#: components/contact-section.tsx
+msgid "Full Name"
+msgstr "Họ và tên"
+
+#: components/contact-section.tsx
+msgid "Get In Touch"
+msgstr "Liên hệ với chúng tôi"
 
 #: app/page.tsx
 #: app/page.tsx
@@ -66,10 +90,33 @@ msgstr "Bảo mật & tuân thủ"
 msgid "Services"
 msgstr "Dịch vụ"
 
-#: components/home/hero.tsx
 msgid "Streamlined workflows & operations"
 msgstr "Quy trình làm việc & hoạt động được tối ưu hóa"
 
 #: components/home/hero.tsx
 msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
-msgstr "Chuyển đổi <0>Doanh nghiệp</0> <1>&</1> <2/><3>Dữ liệu</3> của bạn một cách <4>Thông minh</4>"
+msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
+
+#: components/contact-section.tsx
+msgid "Let's Start a Conversation"
+msgstr "Hãy bắt đầu cuộc trò chuyện"
+
+#: components/contact-section.tsx
+msgid "Let's discuss how our enterprise solutions can drive your digital transformation forward."
+msgstr "Hãy thảo luận về cách các giải pháp doanh nghiệp của chúng tôi có thể thúc đẩy chuyển đổi số của bạn."
+
+#: components/contact-section.tsx
+msgid "Message"
+msgstr "Tin nhắn"
+
+#: components/contact-section.tsx
+msgid "Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations."
+msgstr "Đội ngũ chuyên gia của chúng tôi sẵn sàng giúp bạn triển khai các giải pháp tiên tiến sẽ cách mạng hóa hoạt động kinh doanh của bạn."
+
+#: components/contact-section.tsx
+msgid "Ready to Transform Your Business?"
+msgstr "Sẵn sàng chuyển đổi doanh nghiệp của bạn?"
+
+#: components/contact-section.tsx
+msgid "Send Message"
+msgstr "Gửi tin nhắn"

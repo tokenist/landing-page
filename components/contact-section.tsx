@@ -2,6 +2,7 @@
 
 import type React from "react";
 
+import { Trans } from "@lingui/react/macro";
 import { motion } from "framer-motion";
 import { Mail, Phone, Send } from "lucide-react";
 import { useState } from "react";
@@ -49,17 +50,16 @@ export function ContactSection() {
           >
             <Send className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-secondary-foreground">
-              Get In Touch
+              <Trans>Get In Touch</Trans>
             </span>
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-foreground via-foreground to-foreground/60 bg-clip-text text-transparent mb-4 font-serif">
-            Ready to Transform Your Business?
+            <Trans>Ready to Transform Your Business?</Trans>
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let's discuss how our enterprise solutions can drive your digital
-            transformation forward.
+            <Trans>Let's discuss how our enterprise solutions can drive your digital transformation forward.</Trans>
           </p>
         </motion.div>
 
@@ -74,11 +74,10 @@ export function ContactSection() {
           >
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6 font-serif">
-                Let's Start a Conversation
+                <Trans>Let's Start a Conversation</Trans>
               </h3>
               <p className="text-muted-foreground mb-8">
-                Our team of experts is ready to help you implement cutting-edge
-                solutions that will revolutionize your business operations.
+                <Trans>Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations.</Trans>
               </p>
             </div>
 
@@ -88,7 +87,7 @@ export function ContactSection() {
                   <Mail className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-foreground font-medium">Email Us</p>
+                  <p className="text-foreground font-medium"><Trans>Email Us</Trans></p>
                   <p className="text-muted-foreground">tokenist.solutions@gmail.com</p>
                 </div>
               </div>
@@ -98,7 +97,7 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-foreground font-medium">Call Us</p>
+                  <p className="text-foreground font-medium"><Trans>Call Us</Trans></p>
                   <p className="text-muted-foreground">+84 902 757 816</p>
                 </div>
               </div>
@@ -132,7 +131,7 @@ export function ContactSection() {
                     htmlFor="name"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Full Name
+                    <Trans>Full Name</Trans>
                   </label>
                   <input
                     type="text"
@@ -150,7 +149,7 @@ export function ContactSection() {
                     htmlFor="email"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    Email Address
+                    <Trans>Email Address</Trans>
                   </label>
                   <input
                     type="email"
@@ -170,7 +169,7 @@ export function ContactSection() {
                   htmlFor="company"
                   className="block text-sm font-medium text-foreground mb-2"
                 >
-                  Company Name
+                  <Trans>Company Name</Trans>
                 </label>
                 <input
                   type="text"
@@ -188,7 +187,7 @@ export function ContactSection() {
                   htmlFor="message"
                   className="block text-sm font-medium text-foreground mb-2"
                 >
-                  Message
+                  <Trans>Message</Trans>
                 </label>
                 <textarea
                   id="message"
@@ -209,7 +208,7 @@ export function ContactSection() {
                 className="w-full bg-gradient-to-r from-accent to-accent/80 text-accent-foreground font-medium py-3 px-6 rounded-lg shadow-lg shadow-accent/25 hover:shadow-accent/40 transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                Send Message
+                <Trans>Send Message</Trans>
               </motion.button>
             </form>
           </motion.div>

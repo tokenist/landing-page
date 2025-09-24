@@ -1,46 +1,53 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useTheme } from "next-themes"
-import Earth from "./ui/globe"
-import ScrambleHover from "./ui/scramble"
-import { FollowerPointerCard } from "./ui/following-pointer"
-import { motion, useInView } from "framer-motion"
-import { Suspense, useEffect, useRef, useState } from "react"
-import { geist } from "@/lib/fonts"
-import { cn } from "@/lib/utils"
+import { geist } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+import { motion, useInView } from "framer-motion";
+import { useTheme } from "next-themes";
+import { Suspense, useEffect, useRef, useState } from "react";
+import { FollowerPointerCard } from "./ui/following-pointer";
+import Earth from "./ui/globe";
+import ScrambleHover from "./ui/scramble";
 
 export default function Features() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-  const { theme } = useTheme()
-  const [isHovering, setIsHovering] = useState(false)
-  const [isCliHovering, setIsCliHovering] = useState(false)
-  const [isFeature3Hovering, setIsFeature3Hovering] = useState(false)
-  const [isFeature4Hovering, setIsFeature4Hovering] = useState(false)
-  const [inputValue, setInputValue] = useState("")
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const { theme } = useTheme();
+  const [isHovering, setIsHovering] = useState(false);
+  const [isCliHovering, setIsCliHovering] = useState(false);
+  const [isFeature3Hovering, setIsFeature3Hovering] = useState(false);
+  const [isFeature4Hovering, setIsFeature4Hovering] = useState(false);
+  const [inputValue, setInputValue] = useState("");
 
-  const [baseColor, setBaseColor] = useState<[number, number, number]>([0.961, 0.62, 0.043]) // #F59E0B in RGB normalized
-  const [glowColor, setGlowColor] = useState<[number, number, number]>([0.961, 0.62, 0.043]) // #F59E0B in RGB normalized
+  const [baseColor, setBaseColor] = useState<[number, number, number]>([
+    0.961, 0.62, 0.043,
+  ]); // #F59E0B in RGB normalized
+  const [glowColor, setGlowColor] = useState<[number, number, number]>([
+    0.961, 0.62, 0.043,
+  ]); // #F59E0B in RGB normalized
 
-  const [dark, setDark] = useState<number>(theme === "dark" ? 1 : 0)
+  const [dark, setDark] = useState<number>(theme === "dark" ? 1 : 0);
 
   useEffect(() => {
-    setBaseColor([0.961, 0.62, 0.043]) // #F59E0B
-    setGlowColor([0.961, 0.62, 0.043]) // #F59E0B
-    setDark(theme === "dark" ? 1 : 0)
-  }, [theme])
+    setBaseColor([0.961, 0.62, 0.043]); // #F59E0B
+    setGlowColor([0.961, 0.62, 0.043]); // #F59E0B
+    setDark(theme === "dark" ? 1 : 0);
+  }, [theme]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter") {
-      e.preventDefault()
-      setInputValue("")
+      e.preventDefault();
+      setInputValue("");
     }
-  }
+  };
 
   return (
-    <section id="features" className="text-foreground relative overflow-hidden py-12 sm:py-24 md:py-32">
+    <section
+      id="features"
+      className="text-foreground relative overflow-hidden py-12 sm:py-24 md:py-32"
+    >
       <div className="bg-primary absolute -top-10 left-1/2 h-16 w-44 -translate-x-1/2 rounded-full opacity-40 blur-3xl select-none"></div>
       <div className="via-primary/50 absolute top-0 left-1/2 h-px w-3/5 -translate-x-1/2 bg-gradient-to-r from-transparent to-transparent transition-all ease-in-out"></div>
       <motion.div
@@ -53,7 +60,7 @@ export default function Features() {
         <h2
           className={cn(
             "via-foreground mb-8 bg-gradient-to-b from-zinc-800 to-zinc-700 bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px]",
-            geist.className,
+            geist.className
           )}
         >
           Our Services
@@ -70,12 +77,14 @@ export default function Features() {
             <div className="grid grid-cols-12 gap-4 justify-center">
               {/* ERP Systems */}
               <motion.div
-                className="group border-secondary/40 text-card-foreground relative col-span-12 flex flex-col overflow-hidden rounded-xl border-2 p-6 shadow-xl transition-all ease-in-out md:col-span-6 xl:col-span-6 xl:col-start-2"
+                className="group border-secondary/40 text-card-foreground relative col-span-12 flex flex-col gap-4 overflow-hidden rounded-xl border-2 p-6 shadow-xl transition-all ease-in-out md:col-span-6 xl:col-span-6 xl:col-start-2"
                 onMouseEnter={() => setIsCliHovering(true)}
                 onMouseLeave={() => setIsCliHovering(false)}
                 ref={ref}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.5, delay: 0.5 }}
                 whileHover={{
                   scale: 1.02,
@@ -85,11 +94,14 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">ERP Systems</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">
+                    ERP Systems
+                  </h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Comprehensive enterprise resource planning solutions that integrate all business processes for
-                      maximum efficiency and real-time visibility.
+                      Comprehensive enterprise resource planning solutions that
+                      integrate all business processes for maximum efficiency
+                      and real-time visibility.
                     </p>
                   </div>
                 </div>
@@ -114,28 +126,46 @@ export default function Features() {
                       animate={isCliHovering ? { opacity: 1 } : { opacity: 0 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <svg width="100%" height="100%" viewBox="0 0 121 94" className="absolute">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 121 94"
+                        className="absolute"
+                      >
                         <motion.path
                           d="M 60.688 1.59 L 60.688 92.449 M 60.688 92.449 L 119.368 92.449 M 60.688 92.449 L 1.414 92.449"
                           stroke="rgb(245,158,11)"
                           fill="transparent"
                           strokeDasharray="2 2"
                           initial={{ pathLength: 0 }}
-                          animate={isCliHovering ? { pathLength: 1 } : { pathLength: 0 }}
+                          animate={
+                            isCliHovering
+                              ? { pathLength: 1 }
+                              : { pathLength: 0 }
+                          }
                           transition={{
                             duration: 2,
                             ease: "easeInOut",
                           }}
                         />
                       </svg>
-                      <svg width="100%" height="100%" viewBox="0 0 121 94" className="absolute">
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 121 94"
+                        className="absolute"
+                      >
                         <motion.path
                           d="M 60.688 92.449 L 60.688 1.59 M 60.688 1.59 L 119.368 1.59 M 60.688 1.59 L 1.414 1.59"
                           stroke="rgb(245,158,11)"
                           fill="transparent"
                           strokeDasharray="2 2"
                           initial={{ pathLength: 0 }}
-                          animate={isCliHovering ? { pathLength: 1 } : { pathLength: 0 }}
+                          animate={
+                            isCliHovering
+                              ? { pathLength: 1 }
+                              : { pathLength: 0 }
+                          }
                           transition={{
                             duration: 2,
                             delay: 0.5,
@@ -149,7 +179,11 @@ export default function Features() {
                     <motion.div
                       className="absolute top-1/2 left-1/2 w-16 h-16 bg-amber-500 rounded-full blur-[74px] opacity-65 transform -translate-x-1/2 -translate-y-1/2"
                       initial={{ scale: 1 }}
-                      animate={isCliHovering ? { scale: [1, 1.342, 1, 1.342] } : { scale: 1 }}
+                      animate={
+                        isCliHovering
+                          ? { scale: [1, 1.342, 1, 1.342] }
+                          : { scale: 1 }
+                      }
                       transition={{
                         duration: 3,
                         ease: "easeInOut",
@@ -168,7 +202,9 @@ export default function Features() {
                               key={`left-${index}`}
                               className="bg-white rounded px-3 py-2 flex items-center gap-2 text-black text-sm font-medium shadow-sm"
                               initial={{ opacity: 1, x: 0 }}
-                              animate={isCliHovering ? { x: [-20, 0] } : { x: 0 }}
+                              animate={
+                                isCliHovering ? { x: [-20, 0] } : { x: 0 }
+                              }
                               transition={{
                                 duration: 0.5,
                                 delay: index * 0.1,
@@ -176,9 +212,15 @@ export default function Features() {
                               whileHover={{ scale: 1.05 }}
                             >
                               <div className="w-4 h-4 flex items-center justify-center">
-                                {index === 0 && <span className="text-xs">💰</span>}
-                                {index === 1 && <span className="text-xs">👥</span>}
-                                {index === 2 && <span className="text-xs">📦</span>}
+                                {index === 0 && (
+                                  <span className="text-xs">💰</span>
+                                )}
+                                {index === 1 && (
+                                  <span className="text-xs">👥</span>
+                                )}
+                                {index === 2 && (
+                                  <span className="text-xs">📦</span>
+                                )}
                               </div>
                               {item}
                             </motion.div>
@@ -189,7 +231,11 @@ export default function Features() {
                         <motion.div
                           className="w-16 h-16 border border-gray-300 rounded-lg overflow-hidden shadow-lg"
                           initial={{ opacity: 1, scale: 1 }}
-                          animate={isCliHovering ? { scale: [1, 1.1, 1] } : { scale: 1 }}
+                          animate={
+                            isCliHovering
+                              ? { scale: [1, 1.1, 1] }
+                              : { scale: 1 }
+                          }
                           transition={{ duration: 0.6, ease: "easeOut" }}
                           whileHover={{ scale: 1.1, rotate: 5 }}
                         >
@@ -207,7 +253,9 @@ export default function Features() {
                               key={`right-${index}`}
                               className="bg-white rounded px-3 py-2 flex items-center gap-2 text-black text-sm font-medium shadow-sm"
                               initial={{ opacity: 1, x: 0 }}
-                              animate={isCliHovering ? { x: [20, 0] } : { x: 0 }}
+                              animate={
+                                isCliHovering ? { x: [20, 0] } : { x: 0 }
+                              }
                               transition={{
                                 duration: 0.5,
                                 delay: index * 0.1,
@@ -215,9 +263,15 @@ export default function Features() {
                               whileHover={{ scale: 1.05 }}
                             >
                               <div className="w-4 h-4 flex items-center justify-center">
-                                {index === 0 && <span className="text-xs">📈</span>}
-                                {index === 1 && <span className="text-xs">🤝</span>}
-                                {index === 2 && <span className="text-xs">📊</span>}
+                                {index === 0 && (
+                                  <span className="text-xs">📈</span>
+                                )}
+                                {index === 1 && (
+                                  <span className="text-xs">🤝</span>
+                                )}
+                                {index === 2 && (
+                                  <span className="text-xs">📊</span>
+                                )}
                               </div>
                               {item}
                             </motion.div>
@@ -233,7 +287,12 @@ export default function Features() {
                       animate={isCliHovering ? { opacity: 1 } : { opacity: 0 }}
                       transition={{ duration: 0.5 }}
                     >
-                      <svg width="350" height="350" viewBox="0 0 350 350" className="opacity-40">
+                      <svg
+                        width="350"
+                        height="350"
+                        viewBox="0 0 350 350"
+                        className="opacity-40"
+                      >
                         <motion.path
                           d="M 175 1.159 C 271.01 1.159 348.841 78.99 348.841 175 C 348.841 271.01 271.01 348.841 175 348.841 C 78.99 348.841 1.159 271.01 1.159 175 C 1.159 78.99 78.99 1.159 175 1.159 Z"
                           stroke="rgba(245, 158, 11, 0.38)"
@@ -241,12 +300,18 @@ export default function Features() {
                           fill="transparent"
                           strokeDasharray="4 4"
                           initial={{ pathLength: 0, rotate: 0 }}
-                          animate={isCliHovering ? { pathLength: 1, rotate: 360 } : { pathLength: 0, rotate: 0 }}
+                          animate={
+                            isCliHovering
+                              ? { pathLength: 1, rotate: 360 }
+                              : { pathLength: 0, rotate: 0 }
+                          }
                           transition={{
                             pathLength: { duration: 3, ease: "easeInOut" },
                             rotate: {
                               duration: 20,
-                              repeat: isCliHovering ? Number.POSITIVE_INFINITY : 0,
+                              repeat: isCliHovering
+                                ? Number.POSITIVE_INFINITY
+                                : 0,
                               ease: "linear",
                             },
                           }}
@@ -264,7 +329,9 @@ export default function Features() {
                 onMouseLeave={() => setIsHovering(false)}
                 ref={ref}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.5, delay: 0.5 }}
                 whileHover={{
                   scale: 1.02,
@@ -274,11 +341,14 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Big Data Analytics</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">
+                    Big Data Analytics
+                  </h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Transform massive datasets into actionable insights with advanced analytics, machine learning, and
-                      real-time processing capabilities.
+                      Transform massive datasets into actionable insights with
+                      advanced analytics, machine learning, and real-time
+                      processing capabilities.
                     </p>
                   </div>
                 </div>
@@ -304,7 +374,12 @@ export default function Features() {
                           <div className="bg-secondary/20 h-[400px] w-[400px] animate-pulse rounded-full"></div>
                         }
                       >
-                        <Earth baseColor={baseColor} markerColor={[0, 0, 0]} glowColor={glowColor} dark={dark} />
+                        <Earth
+                          baseColor={baseColor}
+                          markerColor={[0, 0, 0]}
+                          glowColor={glowColor}
+                          dark={dark}
+                        />
                       </Suspense>
                     </div>
                   </div>
@@ -321,7 +396,9 @@ export default function Features() {
                 onMouseEnter={() => setIsFeature3Hovering(true)}
                 onMouseLeave={() => setIsFeature3Hovering(false)}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.5, delay: 1.0 }}
                 whileHover={{
                   scale: 1.02,
@@ -331,11 +408,14 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Website Design</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">
+                    Website Design
+                  </h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Modern, responsive web solutions that deliver exceptional user experiences and drive business
-                      growth through innovative design.
+                      Modern, responsive web solutions that deliver exceptional
+                      user experiences and drive business growth through
+                      innovative design.
                     </p>
                   </div>
                 </div>
@@ -417,7 +497,9 @@ export default function Features() {
                 onMouseEnter={() => setIsFeature4Hovering(true)}
                 onMouseLeave={() => setIsFeature4Hovering(false)}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.5, delay: 1.0 }}
                 whileHover={{
                   rotateY: 5,
@@ -428,11 +510,14 @@ export default function Features() {
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Artificial Intelligence</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">
+                    Artificial Intelligence
+                  </h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Cutting-edge AI solutions that automate processes, enhance decision-making, and unlock new
-                      possibilities for your business.
+                      Cutting-edge AI solutions that automate processes, enhance
+                      decision-making, and unlock new possibilities for your
+                      business.
                     </p>
                   </div>
                 </div>
@@ -452,5 +537,5 @@ export default function Features() {
         </FollowerPointerCard>
       </motion.div>
     </section>
-  )
+  );
 }

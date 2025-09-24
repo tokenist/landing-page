@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import type React from "react";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Tokenist - Enterprise Software Solutions",
@@ -16,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
@@ -27,15 +26,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="light font-sans">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+      <body className="font-sans">
+        {children}
       </body>
     </html>
   );

@@ -5,7 +5,6 @@ import type React from "react";
 import { geist } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { motion, useInView } from "framer-motion";
-import { useTheme } from "next-themes";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { FollowerPointerCard } from "./ui/following-pointer";
 import Earth from "./ui/globe";
@@ -14,7 +13,6 @@ import ScrambleHover from "./ui/scramble";
 export default function Features() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
-  const { theme } = useTheme();
   const [isHovering, setIsHovering] = useState(false);
   const [isCliHovering, setIsCliHovering] = useState(false);
   const [isFeature3Hovering, setIsFeature3Hovering] = useState(false);
@@ -28,13 +26,10 @@ export default function Features() {
     0.961, 0.62, 0.043,
   ]); // #F59E0B in RGB normalized
 
-  const [dark, setDark] = useState<number>(0); // Always light theme
-
   useEffect(() => {
     setBaseColor([0.961, 0.62, 0.043]); // #F59E0B
     setGlowColor([0.961, 0.62, 0.043]); // #F59E0B
-    setDark(0); // Always light theme
-  }, [theme]);
+  }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter") {
@@ -354,7 +349,7 @@ export default function Features() {
                 </div>
                 <div className="flex min-h-[300px] grow items-start justify-center select-none">
                   <h1 className="mt-8 text-center text-5xl leading-[100%] font-semibold sm:leading-normal lg:mt-12 lg:text-6xl">
-                    <span className="bg-background relative mt-3 inline-block w-fit rounded-md border px-1.5 py-0.5 before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-full before:bg-[url('/noise.gif')] before:opacity-[0.09] before:content-['']">
+                    <span className="bg-background relative mt-3 inline-block w-fit rounded-md border px-1.5 py-0.5 before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-full before:opacity-[0.09] before:content-['']">
                       <ScrambleHover
                         text="Analytics"
                         scrambleSpeed={70}
@@ -378,14 +373,13 @@ export default function Features() {
                           baseColor={baseColor}
                           markerColor={[0, 0, 0]}
                           glowColor={glowColor}
-                          dark={dark}
                         />
                       </Suspense>
                     </div>
                   </div>
                   <div className="absolute top-1/2 w-full translate-y-20 scale-x-[1.2] opacity-70 transition-all duration-1000 group-hover:translate-y-8 group-hover:opacity-100">
-                    <div className="from-primary/50 to-primary/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px] dark:opacity-100"></div>
-                    <div className="from-primary/30 to-primary/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px] dark:opacity-100"></div>
+                    <div className="from-primary/50 to-primary/0 absolute left-1/2 h-[256px] w-[60%] -translate-x-1/2 scale-[2.5] rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[512px]"></div>
+                    <div className="from-primary/30 to-primary/0 absolute left-1/2 h-[128px] w-[40%] -translate-x-1/2 scale-200 rounded-[50%] bg-radial from-10% to-60% opacity-20 sm:h-[256px]"></div>
                   </div>
                 </div>
               </motion.div>

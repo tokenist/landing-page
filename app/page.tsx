@@ -71,7 +71,7 @@ export default function Home() {
         </Link>
 
         <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-muted-foreground transition duration-200 hover:text-foreground md:flex md:space-x-2">
-          <a
+          <button
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             onClick={(e) => {
               e.preventDefault();
@@ -92,8 +92,8 @@ export default function Home() {
             <span className="relative z-20">
               <Trans>Services</Trans>
             </span>
-          </a>
-          <a
+          </button>
+          <button
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             onClick={(e) => {
               e.preventDefault();
@@ -114,7 +114,7 @@ export default function Home() {
             <span className="relative z-20">
               <Trans>Contact</Trans>
             </span>
-          </a>
+          </button>
         </div>
 
         <div className="flex items-center gap-4">

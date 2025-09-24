@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
-import { useState } from "react"
+import { motion } from "framer-motion";
+import { Mail, Phone, Send } from "lucide-react";
+import { useState } from "react";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -12,23 +12,25 @@ export function ContactSection() {
     email: "",
     company: "",
     message: "",
-  })
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
+    console.log("Form submitted:", formData);
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   return (
-    <section className="relative py-24 px-4">
+    <section className="relative py-24 px-4 pb-96">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -46,7 +48,9 @@ export function ContactSection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-6"
           >
             <Send className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-white/80">Get In Touch</span>
+            <span className="text-sm font-medium text-white/80">
+              Get In Touch
+            </span>
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent mb-4 font-serif">
@@ -54,7 +58,8 @@ export function ContactSection() {
           </h2>
 
           <p className="text-lg text-white/60 max-w-2xl mx-auto">
-            Let's discuss how our enterprise solutions can drive your digital transformation forward.
+            Let's discuss how our enterprise solutions can drive your digital
+            transformation forward.
           </p>
         </motion.div>
 
@@ -68,10 +73,12 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6 font-serif">Let's Start a Conversation</h3>
+              <h3 className="text-2xl font-bold text-white mb-6 font-serif">
+                Let's Start a Conversation
+              </h3>
               <p className="text-white/60 mb-8">
-                Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your
-                business operations.
+                Our team of experts is ready to help you implement cutting-edge
+                solutions that will revolutionize your business operations.
               </p>
             </div>
 
@@ -82,7 +89,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Email Us</p>
-                  <p className="text-white/60">contact@svc-solutions.com</p>
+                  <p className="text-white/60">tokenist.solutions@gmail.com</p>
                 </div>
               </div>
 
@@ -96,15 +103,17 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <p className="text-white font-medium">Visit Us</p>
-                  <p className="text-white/60">123 Enterprise Blvd, Tech City, TC 12345</p>
+                  <p className="text-white/60">
+                    123 Enterprise Blvd, Tech City, TC 12345
+                  </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
 
@@ -119,7 +128,10 @@ export function ContactSection() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-white/80 mb-2"
+                  >
                     Full Name
                   </label>
                   <input
@@ -134,7 +146,10 @@ export function ContactSection() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-white/80 mb-2"
+                  >
                     Email Address
                   </label>
                   <input
@@ -151,7 +166,10 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-white/80 mb-2">
+                <label
+                  htmlFor="company"
+                  className="block text-sm font-medium text-white/80 mb-2"
+                >
                   Company Name
                 </label>
                 <input
@@ -166,7 +184,10 @@ export function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white/80 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-white/80 mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -195,5 +216,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

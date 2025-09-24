@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
-import { Badge } from "@/components/ui/badge"
-import { Sparkles } from "lucide-react"
+import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
+import { Sparkles, Database, BarChart3, Workflow, Shield } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   return (
     <>
       <section className="relative overflow-hidden min-h-screen flex flex-col">
         <div className="container mx-auto px-4 py-24 sm:py-32 relative z-10 flex-1 flex flex-col">
-          <div className="mx-auto max-w-4xl text-center flex-1 flex flex-col justify-center">
+          <div className="mx-auto max-w-5xl text-center flex-1 flex flex-col justify-center">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,10 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="mb-8"
             >
-              <Badge variant="secondary" className="inline-flex items-center gap-2 px-4 py-2 text-sm">
+              <Badge
+                variant="secondary"
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm"
+              >
                 <Sparkles className="h-4 w-4" />
                 Enterprise Solutions
               </Badge>
@@ -41,7 +44,10 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="mb-8"
             >
-              <h1 id="main-title" className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+              <h1
+                id="main-title"
+                className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl"
+              >
                 Transform Your <strong>Business</strong> <span>&</span> <br />
                 <strong>Data</strong> <em className="italic">Intelligently</em>
               </h1>
@@ -54,8 +60,9 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground"
             >
-              Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and
-              artificial intelligence. Streamline operations and unlock insights for sustainable growth.
+              Leading enterprise software solutions in ERP systems, Big Data
+              analytics, modern website design, and artificial intelligence.
+              Streamline operations and unlock insights for sustainable growth.
             </motion.p>
 
             <motion.div
@@ -128,7 +135,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Social Proof Section */}
+          {/* ERP Solutions Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -136,66 +143,70 @@ export default function Hero() {
             className="mt-auto pb-8"
           >
             <div className="text-center">
-              <p className="text-sm text-muted-foreground mb-6">
-                {/* Updated social proof text */}Trusted by enterprise clients worldwide
+              <p className="text-sm text-muted-foreground mb-8">
+                Comprehensive ERP Solutions for Modern Enterprises
               </p>
-              <div className="flex items-center justify-center gap-8">
-                {/* Microsoft Logo */}
-                <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.3)] transition-all duration-300">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    className="h-8 w-8 fill-current text-foreground"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zm12.623 0H24V24H12.623z" />
-                  </svg>
-                </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                {/* Financial Management */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  className="group flex flex-col items-center p-4 rounded-lg border border-border/50 bg-card/30 hover:bg-card/60 hover:border-primary/30 transition-all duration-300"
+                >
+                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
+                    <BarChart3 className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">Financial Management</h3>
+                  <p className="text-xs text-muted-foreground text-center">Comprehensive accounting & financial reporting</p>
+                </motion.div>
 
-                {/* Oracle Logo */}
-                <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.3)] transition-all duration-300">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    className="h-8 w-8 fill-current text-foreground"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M18.384 8.163c2.125 0 3.847 1.722 3.847 3.847s-1.722 3.847-3.847 3.847H5.616c-2.125 0-3.847-1.722-3.847-3.847s1.722-3.847 3.847-3.847h12.768z" />
-                  </svg>
-                </div>
+                {/* Data Analytics */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="group flex flex-col items-center p-4 rounded-lg border border-border/50 bg-card/30 hover:bg-card/60 hover:border-primary/30 transition-all duration-300"
+                >
+                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
+                    <Database className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">Data Analytics</h3>
+                  <p className="text-xs text-muted-foreground text-center">Real-time insights & business intelligence</p>
+                </motion.div>
 
-                {/* SAP Logo */}
-                <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.3)] transition-all duration-300">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    className="h-8 w-8 fill-current text-foreground"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                  </svg>
-                </div>
+                {/* Process Automation */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.7 }}
+                  className="group flex flex-col items-center p-4 rounded-lg border border-border/50 bg-card/30 hover:bg-card/60 hover:border-primary/30 transition-all duration-300"
+                >
+                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
+                    <Workflow className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">Process Automation</h3>
+                  <p className="text-xs text-muted-foreground text-center">Streamlined workflows & operations</p>
+                </motion.div>
 
-                {/* AWS Logo */}
-                <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.3)] transition-all duration-300">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    className="h-8 w-8 fill-current text-foreground"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335c-.072.048-.144.072-.208.072-.08 0-.16-.04-.239-.112-.112-.12-.207-.248-.279-.383-.072-.135-.144-.296-.224-.495-.56.66-1.263.99-2.111.99-.6 0-1.08-.17-1.439-.51-.36-.34-.543-.796-.543-1.367 0-.607.215-1.095.647-1.471.432-.376 1.008-.567 1.727-.567.24 0 .487.016.743.056.255.04.52.088.791.16v-.527c0-.551-.112-.936-.344-1.167-.23-.23-.62-.343-1.175-.343-.255 0-.52.032-.791.088-.272.056-.536.144-.792.24-.12.048-.207.08-.263.096-.056.016-.096.024-.128.024-.112 0-.168-.08-.168-.248v-.391c0-.128.016-.224.056-.28.04-.056.112-.112.207-.16.272-.144.6-.264.983-.36.384-.096.792-.144 1.224-.144.935 0 1.615.216 2.047.647.424.432.64 1.088.64 1.967v2.584zm-2.951 1.111c.231 0 .471-.04.727-.128.255-.088.48-.224.671-.408.12-.12.207-.255.263-.408.056-.152.088-.336.088-.551v-.264c-.208-.064-.424-.112-.647-.144-.224-.032-.44-.048-.655-.048-.464 0-.8.096-1.023.288-.224.192-.336.464-.336.823 0 .336.08.583.248.751.159.168.408.256.727.256zm5.783.735c-.144 0-.24-.024-.295-.08-.056-.056-.104-.16-.151-.311l-1.687-5.559c-.048-.16-.072-.263-.072-.32 0-.128.064-.2.191-.2h.783c.151 0 .255.024.303.08.056.056.104.16.144.311l1.207 4.767 1.119-4.767c.04-.16.088-.255.144-.311.056-.056.167-.08.303-.08h.639c.151 0 .255.024.303.08.056.056.104.16.144.311l1.135 4.831 1.247-4.831c.04-.16.096-.255.144-.311.056-.056.16-.08.303-.08h.743c.128 0 .2.064.2.2 0 .04-.008.08-.016.128-.008.048-.024.112-.048.192l-1.735 5.559c-.048.16-.096.255-.151.311-.056.056-.151.08-.295.08h-.687c-.151 0-.255-.024-.303-.08-.056-.056-.104-.16-.144-.32l-1.111-4.615-1.095 4.615c-.04.16-.088.255-.144.32-.056.056-.16.08-.303.08h-.687zm9.055.239c-.735 0-1.319-.216-1.743-.647-.424-.432-.639-1.008-.639-1.735 0-.76.2-1.36.607-1.791.408-.432.96-.647 1.663-.647.647 0 1.151.2 1.511.607.36.408.543.976.543 1.711 0 .112-.008.224-.016.336-.008.112-.024.2-.048.264-.024.064-.056.112-.096.144-.04.032-.096.048-.168.048h-3.335c.024.375.128.647.32.823.191.176.456.264.791.264.168 0 .336-.024.504-.072.168-.048.32-.112.456-.192.08-.048.144-.08.184-.096.04-.016.072-.024.096-.024.088 0 .128.064.128.2v.312c0 .104-.016.184-.048.24-.032.056-.088.112-.168.16-.168.088-.368.16-.6.216-.231.056-.472.08-.719.08zm1.615-2.527c0-.336-.08-.607-.24-.815-.16-.208-.384-.312-.671-.312-.296 0-.536.104-.719.312-.184.208-.296.48-.336.815h1.966z" />
-                  </svg>
-                </div>
+                {/* Security & Compliance */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.8 }}
+                  className="group flex flex-col items-center p-4 rounded-lg border border-border/50 bg-card/30 hover:bg-card/60 hover:border-primary/30 transition-all duration-300"
+                >
+                  <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300 mb-3">
+                    <Shield className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-sm text-foreground mb-1">Security & Compliance</h3>
+                  <p className="text-xs text-muted-foreground text-center">Enterprise-grade security standards</p>
+                </motion.div>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
     </>
-  )
+  );
 }

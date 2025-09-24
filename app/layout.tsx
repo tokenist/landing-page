@@ -5,7 +5,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "SVC - Enterprise Software Solutions",
   description: "Transform Your Business with ERP, Big Data, Website Design, and AI Solutions",
-  generator: "v0.app",
+  generator: "Tokenist",
 }
 
 export default function RootLayout({

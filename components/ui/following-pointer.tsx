@@ -20,14 +20,14 @@ export const FollowerPointerCard = ({
   const [isInside, setIsInside] = useState<boolean>(false)
 
   useEffect(() => {
-    console.log("[v0] FollowerPointerCard mounted")
+    console.log("[Tokenist] FollowerPointerCard mounted")
     return () => {
-      console.log("[v0] FollowerPointerCard unmounted")
+      console.log("[Tokenist] FollowerPointerCard unmounted")
     }
   }, [])
 
   useEffect(() => {
-    console.log("[v0] isInside changed:", isInside)
+    console.log("[Tokenist] isInside changed:", isInside)
   }, [isInside])
 
   useEffect(() => {
@@ -149,7 +149,7 @@ export const FollowPointer = ({
           }}
           className="ml-2 min-w-max rounded-full px-2 py-1 text-xs whitespace-nowrap text-white shadow-lg border border-white/20 pointer-events-none"
         >
-          {title || `Dynamic Layout`}
+          {title || `Tokenist Experience`}
         </motion.div>
       </div>
     </motion.div>

@@ -1,30 +1,28 @@
-# SaaS Landing Page
+# Tokenist Landing Page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+*A modern landing page experience for the Tokenist platform*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/tokenistsolutions-3321s-projects/v0-saa-s-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/Npz4tn21cIp)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://tokenist.com)
+[![Built for Tokenist](https://img.shields.io/badge/Built%20for-Tokenist-black?style=for-the-badge)](https://tokenist.com)
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+This repository powers the marketing site for Tokenist.
+Any changes you make locally can be deployed to production to keep the Tokenist brand experience up to date.
 
 ## Deployment
 
 Your project is live at:
 
-**[https://vercel.com/tokenistsolutions-3321s-projects/v0-saa-s-landing-page](https://vercel.com/tokenistsolutions-3321s-projects/v0-saa-s-landing-page)**
+**[https://tokenist.com](https://tokenist.com)**
 
 ## Build your app
 
-Continue building your app on:
-
-**[https://v0.app/chat/projects/Npz4tn21cIp](https://v0.app/chat/projects/Npz4tn21cIp)**
+Continue iterating on the Tokenist experience locally and push updates to this repository to deploy.
 
 ## How It Works
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. Create and modify the project locally.
+2. Open a pull request with your updates.
+3. Merge to trigger an automated deployment.
+4. Vercel deploys the latest version from this repository.

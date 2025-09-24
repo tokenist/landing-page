@@ -1,5 +1,6 @@
 "use client";
 
+import { BackButton } from "@/components/back-button";
 import { ContactSection } from "@/components/contact-section";
 import { StickyFooter } from "@/components/sticky-footer";
 import { Trans } from "@lingui/react/macro";
@@ -263,12 +264,7 @@ export default function ERPPage() {
         </Link>
 
         <div className="flex items-center gap-4">
-          <Link
-            href="/"
-            className="px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-          >
-            <Trans>Back to Home</Trans>
-          </Link>
+          <BackButton />
           <Link
             href="/contact"
             className="mr-2 rounded-md font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
@@ -335,7 +331,7 @@ export default function ERPPage() {
 
           <div className="relative">
             {/* Module Cards arranged in circle */}
-            <div className="relative w-full h-[600px] md:h-[700px]">
+            <div className="relative w-full h-[400px] md:h-[700px]">
               <Image
                 src="/erp-circle.png"
                 alt="ERP Circle"

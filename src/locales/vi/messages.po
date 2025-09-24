@@ -20,7 +20,6 @@ msgstr ""
 #: app/erp/page.tsx
 #: app/erp/page.tsx
 #: app/erp/page.tsx
-#: app/erp/page.tsx
 msgid "{0}"
 msgstr "{0}"
 
@@ -32,9 +31,9 @@ msgstr "{feature}"
 msgid "Access your ERP system anywhere, anytime with responsive design and mobile apps."
 msgstr "Truy cập hệ thống ERP của bạn mọi lúc, mọi nơi với thiết kế tương thích và ứng dụng di động."
 
-#: app/erp/page.tsx
-msgid "Back to Home"
-msgstr "Quay về trang chủ"
+#: components/back-button.tsx
+msgid "Back"
+msgstr "Quay lại"
 
 #: app/erp/page.tsx
 msgid "Bank-level security with role-based access control and data encryption."

@@ -4,13 +4,16 @@ import Features from "@/components/features";
 import Hero from "@/components/home/hero";
 import LanguageSwitcher from "@/components/language-switcher";
 import { StickyFooter } from "@/components/sticky-footer";
+import { Button } from "@/components/ui/button";
 import { Trans } from "@lingui/react/macro";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,6 +96,14 @@ export default function Home() {
               <Trans>Services</Trans>
             </span>
           </button>
+          <Link
+            href="/erp"
+            className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+          >
+            <span className="relative z-20">
+              <Trans>ERP</Trans>
+            </span>
+          </Link>
           <button
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
             onClick={(e) => {
@@ -119,12 +130,14 @@ export default function Home() {
 
         <div className="flex items-center gap-4">
           <LanguageSwitcher className="mr-2" />
-          <Link
-            href="/contact"
+          <Button
+            onClick={() => {
+              router.push("/contact");
+            }}
             className="mr-2 rounded-md font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-b from-primary to-primary/80 text-primary-foreground shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
           >
             <Trans>Get Consultation</Trans>
-          </Link>
+          </Button>
         </div>
       </header>
 
@@ -173,6 +186,13 @@ export default function Home() {
               >
                 <Trans>Services</Trans>
               </button>
+              <Link
+                href="/erp"
+                className="text-left px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Trans>ERP</Trans>
+              </Link>
               <button
                 onClick={() => handleMobileNavClick("contact")}
                 className="text-left px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-background/50"

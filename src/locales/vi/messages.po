@@ -6,14 +6,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: vi\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
-#: components/home/hero.tsx
-msgid "Comprehensive accounting & financial reporting"
-msgstr "Kế toán toàn diện và báo cáo tài chính"
+#. placeholder {0}: module.description
+#. placeholder {0}: module.title
+#. placeholder {0}: step.description
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+msgid "{0}"
+msgstr "{0}"
 
-#: components/home/hero.tsx
-msgid "Comprehensive ERP Solutions for Modern Enterprises"
-msgstr "Giải pháp ERP toàn diện cho doanh nghiệp hiện đại"
+#: app/erp/page.tsx
+msgid "{feature}"
+msgstr "{feature}"
+
+#: app/erp/page.tsx
+msgid "Access your ERP system anywhere, anytime with responsive design and mobile apps."
+msgstr "Truy cập hệ thống ERP của bạn mọi lúc, mọi nơi với thiết kế tương thích và ứng dụng di động."
+
+#: app/erp/page.tsx
+msgid "Back to Home"
+msgstr "Quay về trang chủ"
+
+#: app/erp/page.tsx
+msgid "Bank-level security with role-based access control and data encryption."
+msgstr "Bảo mật cấp ngân hàng với kiểm soát truy cập theo vai trò và mã hóa dữ liệu."
+
+#: app/erp/page.tsx
+msgid "Benefit from the largest ERP community with thousands of apps and integrations."
+msgstr "Hưởng lợi từ cộng đồng ERP lớn nhất với hàng nghìn ứng dụng và tích hợp."
+
+#: app/erp/page.tsx
+msgid "Built on the world's most popular open-source ERP platform"
+msgstr "Xây dựng trên nền tảng ERP mã nguồn mở phổ biến nhất thế giới"
 
 #: components/contact-section.tsx
 msgid "Call Us"
@@ -23,10 +56,30 @@ msgstr "Gọi cho chúng tôi"
 msgid "Company Name"
 msgstr "Tên công ty"
 
+#: app/erp/page.tsx
+msgid "Complete ERP Modules"
+msgstr "Các Mô-đun ERP Hoàn Chỉnh"
+
+#: app/erp/page.tsx
+msgid "Complete ERP solutions built on Odoo framework to streamline your business operations. From sales to manufacturing, we provide integrated solutions that grow with your business."
+msgstr "Giải pháp ERP hoàn chỉnh được xây dựng trên khung Odoo để tối ưu hóa hoạt động kinh doanh của bạn. Từ bán hàng đến sản xuất, chúng tôi cung cấp các giải pháp tích hợp phát triển cùng doanh nghiệp của bạn."
+
+#: components/home/hero.tsx
+msgid "Comprehensive accounting & financial reporting"
+msgstr "Kế toán toàn diện và báo cáo tài chính"
+
+#: components/home/hero.tsx
+msgid "Comprehensive ERP Solutions for Modern Enterprises"
+msgstr "Giải pháp ERP toàn diện cho doanh nghiệp hiện đại"
+
 #: app/page.tsx
 #: app/page.tsx
 msgid "Contact"
 msgstr "Liên hệ"
+
+#: app/erp/page.tsx
+msgid "Cost Effective"
+msgstr "Tiết Kiệm Chi Phí"
 
 #: components/home/hero.tsx
 msgid "Data Analytics"
@@ -36,9 +89,18 @@ msgstr "Phân tích dữ liệu"
 msgid "Email Address"
 msgstr "Địa chỉ email"
 
+#: app/erp/page.tsx
 #: components/contact-section.tsx
 msgid "Email Us"
 msgstr "Gửi email cho chúng tôi"
+
+#: app/erp/page.tsx
+msgid "Enterprise Resource Planning"
+msgstr "Hệ Thống Hoạch Định Nguồn Lực Doanh Nghiệp"
+
+#: app/erp/page.tsx
+msgid "Enterprise Security"
+msgstr "Bảo Mật Doanh Nghiệp"
 
 #: components/home/hero.tsx
 msgid "Enterprise Solutions"
@@ -48,75 +110,158 @@ msgstr "Giải pháp doanh nghiệp"
 msgid "Enterprise-grade security standards"
 msgstr "Tiêu chuẩn bảo mật cấp doanh nghiệp"
 
+#: app/page.tsx
+#: app/page.tsx
+msgid "ERP"
+msgstr "ERP"
+
+#: app/erp/page.tsx
+msgid "ERP integrates all of your business processes into one unified system, enabling real-time data sharing and streamlined operations across departments."
+msgstr "ERP tích hợp tất cả các quy trình kinh doanh của bạn vào một hệ thống thống nhất, cho phép chia sẻ dữ liệu thời gian thực và tối ưu hóa hoạt động giữa các phòng ban."
+
+#: app/erp/page.tsx
+msgid "ERP Workflow Journey"
+msgstr "Hành Trình Quy Trình ERP"
+
+#: app/erp/page.tsx
+msgid "Explore Modules"
+msgstr "Khám Phá Các Phân Hệ"
+
 #: components/home/hero.tsx
 msgid "Explore Solutions"
-msgstr "Khám phá giải pháp"
+msgstr "Khám Phá Giải Pháp"
 
 #: components/home/hero.tsx
 msgid "Financial Management"
 msgstr "Quản lý tài chính"
 
+#: app/erp/page.tsx
+msgid "From order to delivery - see how our ERP system streamlines your entire business process"
+msgstr "Từ đơn hàng đến giao hàng - xem cách hệ thống ERP của chúng tôi tối ưu hóa toàn bộ quy trình kinh doanh của bạn"
+
 #: components/contact-section.tsx
 msgid "Full Name"
 msgstr "Họ và tên"
 
-#: components/contact-section.tsx
-msgid "Get In Touch"
-msgstr "Liên hệ với chúng tôi"
+#: app/erp/page.tsx
+msgid "Fully Customizable"
+msgstr "Hoàn Toàn Tùy Chỉnh"
 
 #: app/page.tsx
 #: app/page.tsx
 msgid "Get Consultation"
 msgstr "Nhận tư vấn"
 
+#: app/erp/page.tsx
+msgid "Get ERP Consultation"
+msgstr "Nhận Tư Vấn ERP"
+
+#: components/contact-section.tsx
+msgid "Get In Touch"
+msgstr "Liên hệ với chúng tôi"
+
+#: app/erp/page.tsx
+msgid "Get up and running quickly with our proven implementation methodology and pre-configured modules."
+msgstr "Khởi chạy nhanh chóng với phương pháp triển khai đã được chứng minh và các mô-đun được cấu hình sẵn của chúng tôi."
+
+#: app/erp/page.tsx
+msgid "Global Community"
+msgstr "Cộng Đồng Toàn Cầu"
+
+#: app/erp/page.tsx
+msgid "How Does An ERP Work?"
+msgstr "ERP Hoạt Động Như Thế Nào?"
+
+#: app/erp/page.tsx
+msgid "Integrated business applications that work seamlessly together"
+msgstr "Các ứng dụng kinh doanh tích hợp hoạt động liền mạch cùng nhau"
+
 #: components/home/hero.tsx
 msgid "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
 msgstr "Giải pháp phần mềm doanh nghiệp hàng đầu trong hệ thống ERP, phân tích Big Data, thiết kế website hiện đại và trí tuệ nhân tạo. Tối ưu hóa hoạt động và khai thác thông tin chi tiết để tăng trưởng bền vững."
 
-#: components/home/hero.tsx
-msgid "Process Automation"
-msgstr "Tự động hóa quy trình"
+#: components/contact-section.tsx
+msgid "Let's discuss how our enterprise solutions can drive your digital transformation forward."
+msgstr "Hãy thảo luận về cách các giải pháp doanh nghiệp của chúng tôi có thể thúc đẩy chuyển đổi số của bạn."
 
-#: components/home/hero.tsx
-msgid "Real-time insights & business intelligence"
-msgstr "Thông tin chi tiết theo thời gian thực & trí thông minh kinh doanh"
-
-#: components/home/hero.tsx
-msgid "Security & Compliance"
-msgstr "Bảo mật & tuân thủ"
-
-#: app/page.tsx
-#: app/page.tsx
-msgid "Services"
-msgstr "Dịch vụ"
-
-msgid "Streamlined workflows & operations"
-msgstr "Quy trình làm việc & hoạt động được tối ưu hóa"
-
-#: components/home/hero.tsx
-msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
-msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
+#: app/erp/page.tsx
+msgid "Let's discuss how our Odoo-based ERP solutions can streamline your operations and accelerate your business growth."
+msgstr "Hãy thảo luận về cách các giải pháp ERP dựa trên Odoo của chúng tôi có thể tối ưu hóa hoạt động và thúc đẩy tăng trưởng kinh doanh của bạn."
 
 #: components/contact-section.tsx
 msgid "Let's Start a Conversation"
 msgstr "Hãy bắt đầu cuộc trò chuyện"
 
 #: components/contact-section.tsx
-msgid "Let's discuss how our enterprise solutions can drive your digital transformation forward."
-msgstr "Hãy thảo luận về cách các giải pháp doanh nghiệp của chúng tôi có thể thúc đẩy chuyển đổi số của bạn."
-
-#: components/contact-section.tsx
 msgid "Message"
 msgstr "Tin nhắn"
+
+#: app/erp/page.tsx
+msgid "Mobile Ready"
+msgstr "Sẵn Sàng Di Động"
+
+#: app/erp/page.tsx
+msgid "No licensing fees, lower total cost of ownership, and transparent pricing structure."
+msgstr "Không phí bản quyền, tổng chi phí sở hữu thấp hơn và cấu trúc giá minh bạch."
 
 #: components/contact-section.tsx
 msgid "Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations."
 msgstr "Đội ngũ chuyên gia của chúng tôi sẵn sàng giúp bạn triển khai các giải pháp tiên tiến sẽ cách mạng hóa hoạt động kinh doanh của bạn."
 
+#: app/erp/page.tsx
+msgid "Powered by Odoo Framework"
+msgstr "Powered by Odoo Framework"
+
+#: components/home/hero.tsx
+msgid "Process Automation"
+msgstr "Tự động hóa quy trình"
+
+#: app/erp/page.tsx
+msgid "Rapid Implementation"
+msgstr "Triển Khai Nhanh Chóng"
+
+#: app/erp/page.tsx
 #: components/contact-section.tsx
 msgid "Ready to Transform Your Business?"
 msgstr "Sẵn sàng chuyển đổi doanh nghiệp của bạn?"
 
+#: components/home/hero.tsx
+msgid "Real-time insights & business intelligence"
+msgstr "Thông tin chi tiết theo thời gian thực & trí thông minh kinh doanh"
+
+#: app/erp/page.tsx
+msgid "Schedule Free Consultation"
+msgstr "Đặt Lịch Tư Vấn Miễn Phí"
+
+#: components/home/hero.tsx
+msgid "Security & Compliance"
+msgstr "Bảo mật & tuân thủ"
+
 #: components/contact-section.tsx
 msgid "Send Message"
 msgstr "Gửi tin nhắn"
+
+#: app/page.tsx
+#: app/page.tsx
+msgid "Services"
+msgstr "Dịch vụ"
+
+#: app/erp/page.tsx
+msgid "Start Your ERP Journey"
+msgstr "Bắt Đầu Hành Trình ERP Của Bạn"
+
+#: components/home/hero.tsx
+msgid "Streamlined workflows & operations"
+msgstr "Quy trình làm việc & hoạt động được tối ưu hóa"
+
+#: app/erp/page.tsx
+msgid "Tailor every aspect of the system to match your unique business processes and requirements."
+msgstr "Tùy chỉnh mọi khía cạnh của hệ thống để phù hợp với các quy trình kinh doanh và yêu cầu độc đáo của bạn."
+
+#: components/home/hero.tsx
+msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
+msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
+
+#: app/erp/page.tsx
+msgid "Why Choose Our Odoo-Based ERP?"
+msgstr "Tại Sao Chọn ERP Dựa Trên Odoo Của Chúng Tôi?"

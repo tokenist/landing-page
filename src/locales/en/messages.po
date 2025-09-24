@@ -6,6 +6,63 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. placeholder {0}: module.description
+#. placeholder {0}: module.title
+#. placeholder {0}: step.description
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+#: app/erp/page.tsx
+msgid "{0}"
+msgstr "{0}"
+
+#: app/erp/page.tsx
+msgid "{feature}"
+msgstr "{feature}"
+
+#: app/erp/page.tsx
+msgid "Access your ERP system anywhere, anytime with responsive design and mobile apps."
+msgstr "Access your ERP system anywhere, anytime with responsive design and mobile apps."
+
+#: app/erp/page.tsx
+msgid "Back to Home"
+msgstr "Back to Home"
+
+#: app/erp/page.tsx
+msgid "Bank-level security with role-based access control and data encryption."
+msgstr "Bank-level security with role-based access control and data encryption."
+
+#: app/erp/page.tsx
+msgid "Benefit from the largest ERP community with thousands of apps and integrations."
+msgstr "Benefit from the largest ERP community with thousands of apps and integrations."
+
+#: app/erp/page.tsx
+msgid "Built on the world's most popular open-source ERP platform"
+msgstr "Built on the world's most popular open-source ERP platform"
+
+#: components/contact-section.tsx
+msgid "Call Us"
+msgstr "Call Us"
+
+#: components/contact-section.tsx
+msgid "Company Name"
+msgstr "Company Name"
+
+#: app/erp/page.tsx
+msgid "Complete ERP Modules"
+msgstr "Complete ERP Modules"
+
+#: app/erp/page.tsx
+msgid "Complete ERP solutions built on Odoo framework to streamline your business operations. From sales to manufacturing, we provide integrated solutions that grow with your business."
+msgstr "Complete ERP solutions built on Odoo framework to streamline your business operations. From sales to manufacturing, we provide integrated solutions that grow with your business."
 
 #: components/home/hero.tsx
 msgid "Comprehensive accounting & financial reporting"
@@ -20,9 +77,30 @@ msgstr "Comprehensive ERP Solutions for Modern Enterprises"
 msgid "Contact"
 msgstr "Contact"
 
+#: app/erp/page.tsx
+msgid "Cost Effective"
+msgstr "Cost Effective"
+
 #: components/home/hero.tsx
 msgid "Data Analytics"
 msgstr "Data Analytics"
+
+#: components/contact-section.tsx
+msgid "Email Address"
+msgstr "Email Address"
+
+#: app/erp/page.tsx
+#: components/contact-section.tsx
+msgid "Email Us"
+msgstr "Email Us"
+
+#: app/erp/page.tsx
+msgid "Enterprise Resource Planning"
+msgstr "Enterprise Resource Planning"
+
+#: app/erp/page.tsx
+msgid "Enterprise Security"
+msgstr "Enterprise Security"
 
 #: components/home/hero.tsx
 msgid "Enterprise Solutions"
@@ -32,6 +110,23 @@ msgstr "Enterprise Solutions"
 msgid "Enterprise-grade security standards"
 msgstr "Enterprise-grade security standards"
 
+#: app/page.tsx
+#: app/page.tsx
+msgid "ERP"
+msgstr "ERP"
+
+#: app/erp/page.tsx
+msgid "ERP integrates all of your business processes into one unified system, enabling real-time data sharing and streamlined operations across departments."
+msgstr "ERP integrates all of your business processes into one unified system, enabling real-time data sharing and streamlined operations across departments."
+
+#: app/erp/page.tsx
+msgid "ERP Workflow Journey"
+msgstr "ERP Workflow Journey"
+
+#: app/erp/page.tsx
+msgid "Explore Modules"
+msgstr "Explore Modules"
+
 #: components/home/hero.tsx
 msgid "Explore Solutions"
 msgstr "Explore Solutions"
@@ -40,36 +135,133 @@ msgstr "Explore Solutions"
 msgid "Financial Management"
 msgstr "Financial Management"
 
+#: app/erp/page.tsx
+msgid "From order to delivery - see how our ERP system streamlines your entire business process"
+msgstr "From order to delivery - see how our ERP system streamlines your entire business process"
+
+#: components/contact-section.tsx
+msgid "Full Name"
+msgstr "Full Name"
+
+#: app/erp/page.tsx
+msgid "Fully Customizable"
+msgstr "Fully Customizable"
+
 #: app/page.tsx
 #: app/page.tsx
 msgid "Get Consultation"
 msgstr "Get Consultation"
 
+#: app/erp/page.tsx
+msgid "Get ERP Consultation"
+msgstr "Get ERP Consultation"
+
+#: components/contact-section.tsx
+msgid "Get In Touch"
+msgstr "Get In Touch"
+
+#: app/erp/page.tsx
+msgid "Get up and running quickly with our proven implementation methodology and pre-configured modules."
+msgstr "Get up and running quickly with our proven implementation methodology and pre-configured modules."
+
+#: app/erp/page.tsx
+msgid "Global Community"
+msgstr "Global Community"
+
+#: app/erp/page.tsx
+msgid "How Does An ERP Work?"
+msgstr "How Does An ERP Work?"
+
+#: app/erp/page.tsx
+msgid "Integrated business applications that work seamlessly together"
+msgstr "Integrated business applications that work seamlessly together"
+
 #: components/home/hero.tsx
 msgid "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
 msgstr "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
+
+#: components/contact-section.tsx
+msgid "Let's discuss how our enterprise solutions can drive your digital transformation forward."
+msgstr "Let's discuss how our enterprise solutions can drive your digital transformation forward."
+
+#: app/erp/page.tsx
+msgid "Let's discuss how our Odoo-based ERP solutions can streamline your operations and accelerate your business growth."
+msgstr "Let's discuss how our Odoo-based ERP solutions can streamline your operations and accelerate your business growth."
+
+#: components/contact-section.tsx
+msgid "Let's Start a Conversation"
+msgstr "Let's Start a Conversation"
+
+#: components/contact-section.tsx
+msgid "Message"
+msgstr "Message"
+
+#: app/erp/page.tsx
+msgid "Mobile Ready"
+msgstr "Mobile Ready"
+
+#: app/erp/page.tsx
+msgid "No licensing fees, lower total cost of ownership, and transparent pricing structure."
+msgstr "No licensing fees, lower total cost of ownership, and transparent pricing structure."
+
+#: components/contact-section.tsx
+msgid "Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations."
+msgstr "Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations."
+
+#: app/erp/page.tsx
+msgid "Powered by Odoo Framework"
+msgstr "Powered by Odoo Framework"
 
 #: components/home/hero.tsx
 msgid "Process Automation"
 msgstr "Process Automation"
 
+#: app/erp/page.tsx
+msgid "Rapid Implementation"
+msgstr "Rapid Implementation"
+
+#: app/erp/page.tsx
+#: components/contact-section.tsx
+msgid "Ready to Transform Your Business?"
+msgstr "Ready to Transform Your Business?"
+
 #: components/home/hero.tsx
 msgid "Real-time insights & business intelligence"
 msgstr "Real-time insights & business intelligence"
 
+#: app/erp/page.tsx
+msgid "Schedule Free Consultation"
+msgstr "Schedule Free Consultation"
+
 #: components/home/hero.tsx
 msgid "Security & Compliance"
 msgstr "Security & Compliance"
+
+#: components/contact-section.tsx
+msgid "Send Message"
+msgstr "Send Message"
 
 #: app/page.tsx
 #: app/page.tsx
 msgid "Services"
 msgstr "Services"
 
+#: app/erp/page.tsx
+msgid "Start Your ERP Journey"
+msgstr "Start Your ERP Journey"
+
 #: components/home/hero.tsx
 msgid "Streamlined workflows & operations"
 msgstr "Streamlined workflows & operations"
 
+#: app/erp/page.tsx
+msgid "Tailor every aspect of the system to match your unique business processes and requirements."
+msgstr "Tailor every aspect of the system to match your unique business processes and requirements."
+
 #: components/home/hero.tsx
 msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
 msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
+
+#: app/erp/page.tsx
+msgid "Why Choose Our Odoo-Based ERP?"
+msgstr "Why Choose Our Odoo-Based ERP?"

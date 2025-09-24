@@ -1,12 +1,10 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "SVC - Enterprise Software Solutions",
+  description: "Transform Your Business with ERP, Big Data, Website Design, and AI Solutions",
   generator: "v0.app",
 }
 
@@ -18,15 +16,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className="dark">{children}</body>
+      <body className="dark font-sans">{children}</body>
     </html>
   )
 }

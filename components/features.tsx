@@ -21,14 +21,14 @@ export default function Features() {
   const [isFeature4Hovering, setIsFeature4Hovering] = useState(false)
   const [inputValue, setInputValue] = useState("")
 
-  const [baseColor, setBaseColor] = useState<[number, number, number]>([0.906, 0.541, 0.325]) // #e78a53 in RGB normalized
-  const [glowColor, setGlowColor] = useState<[number, number, number]>([0.906, 0.541, 0.325]) // #e78a53 in RGB normalized
+  const [baseColor, setBaseColor] = useState<[number, number, number]>([0.961, 0.62, 0.043]) // #F59E0B in RGB normalized
+  const [glowColor, setGlowColor] = useState<[number, number, number]>([0.961, 0.62, 0.043]) // #F59E0B in RGB normalized
 
   const [dark, setDark] = useState<number>(theme === "dark" ? 1 : 0)
 
   useEffect(() => {
-    setBaseColor([0.906, 0.541, 0.325]) // #e78a53
-    setGlowColor([0.906, 0.541, 0.325]) // #e78a53
+    setBaseColor([0.961, 0.62, 0.043]) // #F59E0B
+    setGlowColor([0.961, 0.62, 0.043]) // #F59E0B
     setDark(theme === "dark" ? 1 : 0)
   }, [theme])
 
@@ -56,19 +56,19 @@ export default function Features() {
             geist.className,
           )}
         >
-          Features
+          Our Services
         </h2>
         <FollowerPointerCard
           title={
             <div className="flex items-center gap-2">
               <span>✨</span>
-              <span>Interactive Features</span>
+              <span>Enterprise Solutions</span>
             </div>
           }
         >
           <div className="cursor-none">
             <div className="grid grid-cols-12 gap-4 justify-center">
-              {/* Cli */}
+              {/* ERP Systems */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative col-span-12 flex flex-col overflow-hidden rounded-xl border-2 p-6 shadow-xl transition-all ease-in-out md:col-span-6 xl:col-span-6 xl:col-start-2"
                 onMouseEnter={() => setIsCliHovering(true)}
@@ -79,16 +79,17 @@ export default function Features() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 whileHover={{
                   scale: 1.02,
-                  borderColor: "rgba(231, 138, 83, 0.6)",
-                  boxShadow: "0 0 30px rgba(231, 138, 83, 0.2)",
+                  borderColor: "rgba(245, 158, 11, 0.6)",
+                  boxShadow: "0 0 30px rgba(245, 158, 11, 0.2)",
                 }}
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">CLI & Manual Support</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">ERP Systems</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Integrate your landing page directly in the product while using your favorite tools.
+                      Comprehensive enterprise resource planning solutions that integrate all business processes for
+                      maximum efficiency and real-time visibility.
                     </p>
                   </div>
                 </div>
@@ -101,7 +102,7 @@ export default function Features() {
                     <div className="absolute inset-0">
                       <img
                         src="https://framerusercontent.com/images/UjqUIiBHmIcSH9vos9HlG2BF4bo.png"
-                        alt="Arrow-CoreExchange"
+                        alt="ERP System Integration"
                         className="w-full h-full object-cover rounded-xl"
                       />
                     </div>
@@ -116,7 +117,7 @@ export default function Features() {
                       <svg width="100%" height="100%" viewBox="0 0 121 94" className="absolute">
                         <motion.path
                           d="M 60.688 1.59 L 60.688 92.449 M 60.688 92.449 L 119.368 92.449 M 60.688 92.449 L 1.414 92.449"
-                          stroke="rgb(255,222,213)"
+                          stroke="rgb(245,158,11)"
                           fill="transparent"
                           strokeDasharray="2 2"
                           initial={{ pathLength: 0 }}
@@ -130,7 +131,7 @@ export default function Features() {
                       <svg width="100%" height="100%" viewBox="0 0 121 94" className="absolute">
                         <motion.path
                           d="M 60.688 92.449 L 60.688 1.59 M 60.688 1.59 L 119.368 1.59 M 60.688 1.59 L 1.414 1.59"
-                          stroke="rgb(255,222,213)"
+                          stroke="rgb(245,158,11)"
                           fill="transparent"
                           strokeDasharray="2 2"
                           initial={{ pathLength: 0 }}
@@ -144,9 +145,9 @@ export default function Features() {
                       </svg>
                     </motion.div>
 
-                    {/* Animated Purple Blur Effect */}
+                    {/* Animated Amber Blur Effect */}
                     <motion.div
-                      className="absolute top-1/2 left-1/2 w-16 h-16 bg-purple-500 rounded-full blur-[74px] opacity-65 transform -translate-x-1/2 -translate-y-1/2"
+                      className="absolute top-1/2 left-1/2 w-16 h-16 bg-amber-500 rounded-full blur-[74px] opacity-65 transform -translate-x-1/2 -translate-y-1/2"
                       initial={{ scale: 1 }}
                       animate={isCliHovering ? { scale: [1, 1.342, 1, 1.342] } : { scale: 1 }}
                       transition={{
@@ -162,7 +163,7 @@ export default function Features() {
                       <div className="flex items-center gap-8">
                         {/* Left Column */}
                         <div className="flex flex-col gap-3">
-                          {["Feature-1", "Feature-1", "Feature-1"].map((item, index) => (
+                          {["Finance", "HR", "Inventory"].map((item, index) => (
                             <motion.div
                               key={`left-${index}`}
                               className="bg-white rounded px-3 py-2 flex items-center gap-2 text-black text-sm font-medium shadow-sm"
@@ -175,9 +176,9 @@ export default function Features() {
                               whileHover={{ scale: 1.05 }}
                             >
                               <div className="w-4 h-4 flex items-center justify-center">
-                                {index === 0 && <span className="text-xs">📄</span>}
-                                {index === 1 && <span className="text-xs">💰</span>}
-                                {index === 2 && <span className="text-xs">🏢</span>}
+                                {index === 0 && <span className="text-xs">💰</span>}
+                                {index === 1 && <span className="text-xs">👥</span>}
+                                {index === 2 && <span className="text-xs">📦</span>}
                               </div>
                               {item}
                             </motion.div>
@@ -194,14 +195,14 @@ export default function Features() {
                         >
                           <img
                             src="https://framerusercontent.com/images/q43ivjLz67lXhWf6TKfLIh0FY.png"
-                            alt="Logo"
+                            alt="ERP Logo"
                             className="w-full h-full object-cover"
                           />
                         </motion.div>
 
                         {/* Right Column */}
                         <div className="flex flex-col gap-3">
-                          {["Feature-1", "Feature-1", "Feature-1"].map((item, index) => (
+                          {["Sales", "CRM", "Reports"].map((item, index) => (
                             <motion.div
                               key={`right-${index}`}
                               className="bg-white rounded px-3 py-2 flex items-center gap-2 text-black text-sm font-medium shadow-sm"
@@ -214,9 +215,9 @@ export default function Features() {
                               whileHover={{ scale: 1.05 }}
                             >
                               <div className="w-4 h-4 flex items-center justify-center">
-                                {index === 0 && <span className="text-xs">👥</span>}
-                                {index === 1 && <span className="text-xs">💳</span>}
-                                {index === 2 && <span className="text-xs">👨‍⚕️</span>}
+                                {index === 0 && <span className="text-xs">📈</span>}
+                                {index === 1 && <span className="text-xs">🤝</span>}
+                                {index === 2 && <span className="text-xs">📊</span>}
                               </div>
                               {item}
                             </motion.div>
@@ -235,7 +236,7 @@ export default function Features() {
                       <svg width="350" height="350" viewBox="0 0 350 350" className="opacity-40">
                         <motion.path
                           d="M 175 1.159 C 271.01 1.159 348.841 78.99 348.841 175 C 348.841 271.01 271.01 348.841 175 348.841 C 78.99 348.841 1.159 271.01 1.159 175 C 1.159 78.99 78.99 1.159 175 1.159 Z"
-                          stroke="rgba(255, 255, 255, 0.38)"
+                          stroke="rgba(245, 158, 11, 0.38)"
                           strokeWidth="1.16"
                           fill="transparent"
                           strokeDasharray="4 4"
@@ -256,7 +257,7 @@ export default function Features() {
                 </div>
               </motion.div>
 
-              {/* Global */}
+              {/* Big Data Analytics */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative col-span-12 flex flex-col overflow-hidden rounded-xl border-2 p-6 shadow-xl transition-all ease-in-out md:col-span-6 xl:col-span-6 xl:col-start-8"
                 onMouseEnter={() => setIsHovering(true)}
@@ -267,32 +268,32 @@ export default function Features() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 whileHover={{
                   scale: 1.02,
-                  borderColor: "rgba(231, 138, 83, 0.6)",
-                  boxShadow: "0 0 30px rgba(231, 138, 83, 0.2)",
+                  borderColor: "rgba(245, 158, 11, 0.6)",
+                  boxShadow: "0 0 30px rgba(245, 158, 11, 0.2)",
                 }}
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Globally Usable</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Big Data Analytics</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Blocks are available everywhere but ours are the best. Use them in your favorite framework or even
-                      in plain HTML.
+                      Transform massive datasets into actionable insights with advanced analytics, machine learning, and
+                      real-time processing capabilities.
                     </p>
                   </div>
                 </div>
                 <div className="flex min-h-[300px] grow items-start justify-center select-none">
                   <h1 className="mt-8 text-center text-5xl leading-[100%] font-semibold sm:leading-normal lg:mt-12 lg:text-6xl">
-                    <span className='bg-background relative mt-3 inline-block w-fit rounded-md border px-1.5 py-0.5 before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-full before:bg-[url("/noise.gif")] before:opacity-[0.09] before:content-[""]'>
+                    <span className="bg-background relative mt-3 inline-block w-fit rounded-md border px-1.5 py-0.5 before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-full before:bg-[url('/noise.gif')] before:opacity-[0.09] before:content-['']">
                       <ScrambleHover
-                        text="feature-2"
+                        text="Analytics"
                         scrambleSpeed={70}
                         maxIterations={20}
                         useOriginalCharsOnly={false}
-                        className="cursor-pointer bg-gradient-to-t from-[#e78a53] to-[#e78a53] bg-clip-text text-transparent"
+                        className="cursor-pointer bg-gradient-to-t from-[#F59E0B] to-[#F59E0B] bg-clip-text text-transparent"
                         isHovering={isHovering}
                         setIsHovering={setIsHovering}
-                        characters="abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]{}|;':\,./<>?"
+                        characters="abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]{}|"
                       />
                     </span>
                   </h1>
@@ -314,7 +315,7 @@ export default function Features() {
                 </div>
               </motion.div>
 
-              {/* Smart Components */}
+              {/* Website Design */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative col-span-12 flex flex-col overflow-hidden rounded-xl border-2 p-6 shadow-xl transition-all ease-in-out md:col-span-6 xl:col-span-6 xl:col-start-2"
                 onMouseEnter={() => setIsFeature3Hovering(true)}
@@ -324,16 +325,17 @@ export default function Features() {
                 transition={{ duration: 0.5, delay: 1.0 }}
                 whileHover={{
                   scale: 1.02,
-                  borderColor: "rgba(231, 138, 83, 0.5)",
-                  boxShadow: "0 0 30px rgba(231, 138, 83, 0.2)",
+                  borderColor: "rgba(245, 158, 11, 0.5)",
+                  boxShadow: "0 0 30px rgba(245, 158, 11, 0.2)",
                 }}
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Smart Components</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Website Design</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Intelligent components that adapt to your needs with built-in animations and interactions.
+                      Modern, responsive web solutions that deliver exceptional user experiences and drive business
+                      growth through innovative design.
                     </p>
                   </div>
                 </div>
@@ -343,7 +345,7 @@ export default function Features() {
                       <div className="p-4">
                         <textarea
                           className="w-full min-h-[100px] bg-transparent border-none text-white placeholder:text-white/50 resize-none focus:outline-none text-base leading-relaxed"
-                          placeholder="Search the web..."
+                          placeholder="Design your vision..."
                           value={inputValue}
                           onChange={(e) => setInputValue(e.target.value)}
                           onKeyDown={handleKeyDown}
@@ -367,7 +369,7 @@ export default function Features() {
                               <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
                             </svg>
                           </button>
-                          <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#e78a53] hover:bg-[#e78a53]/90 transition-colors text-white font-medium">
+                          <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#F59E0B] hover:bg-[#F59E0B]/90 transition-colors text-white font-medium">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -383,7 +385,7 @@ export default function Features() {
                               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                               <path d="M2 12h20"></path>
                             </svg>
-                            Search
+                            Create
                           </button>
                         </div>
                         <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
@@ -409,7 +411,7 @@ export default function Features() {
                 </div>
               </motion.div>
 
-              {/* Dynamic Layouts */}
+              {/* Artificial Intelligence */}
               <motion.div
                 className="group border-secondary/40 text-card-foreground relative col-span-12 flex flex-col overflow-hidden rounded-xl border-2 p-6 shadow-xl transition-all ease-in-out md:col-span-6 xl:col-span-6 xl:col-start-8"
                 onMouseEnter={() => setIsFeature4Hovering(true)}
@@ -420,16 +422,17 @@ export default function Features() {
                 whileHover={{
                   rotateY: 5,
                   rotateX: 2,
-                  boxShadow: "0 20px 40px rgba(231, 138, 83, 0.3)",
-                  borderColor: "rgba(231, 138, 83, 0.6)",
+                  boxShadow: "0 20px 40px rgba(245, 158, 11, 0.3)",
+                  borderColor: "rgba(245, 158, 11, 0.6)",
                 }}
                 style={{ transition: "all 0s ease-in-out" }}
               >
                 <div className="flex flex-col gap-4">
-                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Dynamic Layouts</h3>
+                  <h3 className="text-2xl leading-none font-semibold tracking-tight">Artificial Intelligence</h3>
                   <div className="text-md text-muted-foreground flex flex-col gap-2 text-sm">
                     <p className="max-w-[460px]">
-                      Responsive layouts that transform and adapt seamlessly across all device sizes.
+                      Cutting-edge AI solutions that automate processes, enhance decision-making, and unlock new
+                      possibilities for your business.
                     </p>
                   </div>
                 </div>
@@ -437,7 +440,7 @@ export default function Features() {
                   <div className="relative w-full max-w-sm">
                     <img
                       src="/modern-grid-layout.png"
-                      alt="Dynamic Layout Example"
+                      alt="AI Neural Network"
                       className="w-full h-auto rounded-lg shadow-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>

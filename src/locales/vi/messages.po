@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-09-24 13:10+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: vi\n"
+
+#: components/home/hero.tsx
+msgid "Comprehensive accounting & financial reporting"
+msgstr "Kế toán toàn diện và báo cáo tài chính"
+
+#: components/home/hero.tsx
+msgid "Comprehensive ERP Solutions for Modern Enterprises"
+msgstr "Giải pháp ERP toàn diện cho doanh nghiệp hiện đại"
+
+#: app/page.tsx
+#: app/page.tsx
+msgid "Contact"
+msgstr "Liên hệ"
+
+#: components/home/hero.tsx
+msgid "Data Analytics"
+msgstr "Phân tích dữ liệu"
+
+#: components/home/hero.tsx
+msgid "Enterprise Solutions"
+msgstr "Giải pháp doanh nghiệp"
+
+#: components/home/hero.tsx
+msgid "Enterprise-grade security standards"
+msgstr "Tiêu chuẩn bảo mật cấp doanh nghiệp"
+
+#: components/home/hero.tsx
+msgid "Explore Solutions"
+msgstr "Khám phá giải pháp"
+
+#: components/home/hero.tsx
+msgid "Financial Management"
+msgstr "Quản lý tài chính"
+
+#: app/page.tsx
+#: app/page.tsx
+msgid "Get Consultation"
+msgstr "Nhận tư vấn"
+
+#: components/home/hero.tsx
+msgid "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
+msgstr "Giải pháp phần mềm doanh nghiệp hàng đầu trong hệ thống ERP, phân tích Big Data, thiết kế website hiện đại và trí tuệ nhân tạo. Tối ưu hóa hoạt động và khai thác thông tin chi tiết để tăng trưởng bền vững."
+
+#: components/home/hero.tsx
+msgid "Process Automation"
+msgstr "Tự động hóa quy trình"
+
+#: components/home/hero.tsx
+msgid "Real-time insights & business intelligence"
+msgstr "Thông tin chi tiết theo thời gian thực & trí thông minh kinh doanh"
+
+#: components/home/hero.tsx
+msgid "Security & Compliance"
+msgstr "Bảo mật & tuân thủ"
+
+#: app/page.tsx
+#: app/page.tsx
+msgid "Services"
+msgstr "Dịch vụ"
+
+#: components/home/hero.tsx
+msgid "Streamlined workflows & operations"
+msgstr "Quy trình làm việc & hoạt động được tối ưu hóa"
+
+#: components/home/hero.tsx
+msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
+msgstr "Chuyển đổi <0>Doanh nghiệp</0> <1>&</1> <2/><3>Dữ liệu</3> của bạn một cách <4>Thông minh</4>"

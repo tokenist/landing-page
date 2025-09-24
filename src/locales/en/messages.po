@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-09-24 13:10+0700\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+
+#: components/home/hero.tsx
+msgid "Comprehensive accounting & financial reporting"
+msgstr "Comprehensive accounting & financial reporting"
+
+#: components/home/hero.tsx
+msgid "Comprehensive ERP Solutions for Modern Enterprises"
+msgstr "Comprehensive ERP Solutions for Modern Enterprises"
+
+#: app/page.tsx
+#: app/page.tsx
+msgid "Contact"
+msgstr "Contact"
+
+#: components/home/hero.tsx
+msgid "Data Analytics"
+msgstr "Data Analytics"
+
+#: components/home/hero.tsx
+msgid "Enterprise Solutions"
+msgstr "Enterprise Solutions"
+
+#: components/home/hero.tsx
+msgid "Enterprise-grade security standards"
+msgstr "Enterprise-grade security standards"
+
+#: components/home/hero.tsx
+msgid "Explore Solutions"
+msgstr "Explore Solutions"
+
+#: components/home/hero.tsx
+msgid "Financial Management"
+msgstr "Financial Management"
+
+#: app/page.tsx
+#: app/page.tsx
+msgid "Get Consultation"
+msgstr "Get Consultation"
+
+#: components/home/hero.tsx
+msgid "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
+msgstr "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
+
+#: components/home/hero.tsx
+msgid "Process Automation"
+msgstr "Process Automation"
+
+#: components/home/hero.tsx
+msgid "Real-time insights & business intelligence"
+msgstr "Real-time insights & business intelligence"
+
+#: components/home/hero.tsx
+msgid "Security & Compliance"
+msgstr "Security & Compliance"
+
+#: app/page.tsx
+#: app/page.tsx
+msgid "Services"
+msgstr "Services"
+
+#: components/home/hero.tsx
+msgid "Streamlined workflows & operations"
+msgstr "Streamlined workflows & operations"
+
+#: components/home/hero.tsx
+msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
+msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"

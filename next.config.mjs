@@ -9,6 +9,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    swcPlugins: [
+      ["@lingui/swc-plugin", {}]
+    ]
+  }
 }
 
 export default nextConfig

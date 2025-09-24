@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type React from "react";
 import "./globals.css";
+import LinguiProvider from "@/components/i18n-provider";
 
 export const metadata: Metadata = {
   title: "Tokenist - Enterprise Software Solutions",
@@ -27,7 +28,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
-        {children}
+        <LinguiProvider>
+          {children}
+        </LinguiProvider>
       </body>
     </html>
   );

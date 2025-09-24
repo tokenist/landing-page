@@ -1,17 +1,18 @@
-import type React from "react"
-import type { Metadata } from "next"
-import "./globals.css"
+import type { Metadata } from "next";
+import type React from "react";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SVC - Enterprise Software Solutions",
-  description: "Transform Your Business with ERP, Big Data, Website Design, and AI Solutions",
+  title: "Tokenist - Enterprise Software Solutions",
+  description:
+    "Transform Your Business with ERP, Big Data, Website Design, and AI Solutions",
   generator: "Tokenist",
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" className="dark">
@@ -27,5 +28,5 @@ export default function RootLayout({
       </head>
       <body className="dark font-sans">{children}</body>
     </html>
-  )
+  );
 }

@@ -102,11 +102,15 @@ export function StickyFooter() {
                     ((e.target as HTMLElement).style.color = "#121113")
                   }
                 >
-                  <a href="https://github.com/tokenist" target="_blank">
+                  <a
+                    href="https://github.com/tokenist"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Github
                   </a>
                 </li>
-                <li
+                {/* <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
                   onMouseEnter={(e) =>
@@ -118,8 +122,8 @@ export function StickyFooter() {
                   }
                 >
                   Twitter
-                </li>
-                <li
+                </li> */}
+                {/* <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
                   onMouseEnter={(e) =>
@@ -131,7 +135,7 @@ export function StickyFooter() {
                   }
                 >
                   Discord
-                </li>
+                </li> */}
               </ul>
             </motion.div>
             <motion.h2

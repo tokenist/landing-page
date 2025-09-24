@@ -99,7 +99,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Call Us</p>
-                  <p className="text-white/60">+1 (555) 123-4567</p>
+                  <p className="text-white/60">+84 902 757 816</p>
                 </div>
               </div>
 

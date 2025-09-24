@@ -28,12 +28,12 @@ export default function Features() {
     0.961, 0.62, 0.043,
   ]); // #F59E0B in RGB normalized
 
-  const [dark, setDark] = useState<number>(theme === "dark" ? 1 : 0);
+  const [dark, setDark] = useState<number>(0); // Always light theme
 
   useEffect(() => {
     setBaseColor([0.961, 0.62, 0.043]); // #F59E0B
     setGlowColor([0.961, 0.62, 0.043]); // #F59E0B
-    setDark(theme === "dark" ? 1 : 0);
+    setDark(0); // Always light theme
   }, [theme]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -59,7 +59,7 @@ export default function Features() {
       >
         <h2
           className={cn(
-            "via-foreground mb-8 bg-gradient-to-b from-zinc-800 to-zinc-700 bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px]",
+            "mb-8 bg-gradient-to-b from-slate-900 to-slate-700 bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px]",
             geist.className
           )}
         >
@@ -421,10 +421,10 @@ export default function Features() {
                 </div>
                 <div className="flex grow items-center justify-center select-none relative min-h-[300px] p-4">
                   <div className="w-full max-w-lg">
-                    <div className="relative rounded-2xl border border-white/10 bg-black/20 dark:bg-white/5 backdrop-blur-sm">
+                    <div className="relative rounded-2xl border border-border bg-card backdrop-blur-sm shadow-lg">
                       <div className="p-4">
                         <textarea
-                          className="w-full min-h-[100px] bg-transparent border-none text-white placeholder:text-white/50 resize-none focus:outline-none text-base leading-relaxed"
+                          className="w-full min-h-[100px] bg-transparent border-none text-foreground placeholder:text-muted-foreground resize-none focus:outline-none text-base leading-relaxed"
                           placeholder="Design your vision..."
                           value={inputValue}
                           onChange={(e) => setInputValue(e.target.value)}
@@ -433,7 +433,7 @@ export default function Features() {
                       </div>
                       <div className="flex items-center justify-between px-4 pb-4">
                         <div className="flex items-center gap-3">
-                          <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                          <button className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -444,12 +444,12 @@ export default function Features() {
                               strokeWidth="2"
                               strokeLinecap="round"
                               strokeLinejoin="round"
-                              className="text-white/70"
+                              className="text-secondary-foreground"
                             >
                               <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
                             </svg>
                           </button>
-                          <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#F59E0B] hover:bg-[#F59E0B]/90 transition-colors text-white font-medium">
+                          <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent hover:bg-accent/90 transition-colors text-accent-foreground font-medium">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -468,7 +468,7 @@ export default function Features() {
                             Create
                           </button>
                         </div>
-                        <button className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                        <button className="p-2 rounded-full bg-secondary hover:bg-secondary/80 transition-colors">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -479,7 +479,7 @@ export default function Features() {
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="text-white/70"
+                            className="text-secondary-foreground"
                           >
                             <path d="m22 2-7 20-4-9-9-4Z"></path>
                             <path d="M22 2 11 13"></path>

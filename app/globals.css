@@ -4,50 +4,51 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1.0 0 0);
-  --foreground: #121113;
-  --card: oklch(1.0 0 0);
-  --card-foreground: #121113;
-  --popover: oklch(1.0 0 0);
-  --popover-foreground: #121113;
-  --primary: #1e40af; /* Updated to deep blue from design pattern */
-  --primary-foreground: oklch(1.0 0 0);
-  --secondary: #334155; /* Updated to slate blue from design pattern */
-  --secondary-foreground: oklch(1.0 0 0);
-  --muted: oklch(0.967 0.0029 264.5419);
-  --muted-foreground: oklch(0.551 0.0234 264.3637);
-  --accent: #f59e0b; /* Updated to amber accent from design pattern */
-  --accent-foreground: #121113;
-  --destructive: #ef4444; /* Updated to red from design pattern */
-  --destructive-foreground: oklch(0.9851 0 0);
-  --border: oklch(0.9276 0.0058 264.5313);
-  --input: oklch(0.9276 0.0058 264.5313);
-  --ring: #f59e0b; /* Updated to amber from design pattern */
-  --chart-1: oklch(0.594 0.0443 196.0233);
-  --chart-2: oklch(0.7214 0.1337 49.9802);
-  --chart-3: oklch(0.8721 0.0864 68.5474);
-  --chart-4: oklch(0.6268 0 0);
-  --chart-5: oklch(0.683 0 0);
-  --sidebar: oklch(1.0 0 0);
-  --sidebar-foreground: #121113;
-  --sidebar-primary: #f59e0b; /* Updated to amber from design pattern */
-  --sidebar-primary-foreground: oklch(1.0 0 0);
-  --sidebar-accent: oklch(1.0 0 0);
-  --sidebar-accent-foreground: #121113;
-  --sidebar-border: oklch(0.9276 0.0058 264.5313);
-  --sidebar-ring: #f59e0b; /* Updated to amber from design pattern */
-  --font-sans: Geist Mono, ui-monospace, monospace;
-  --font-serif: serif;
-  --font-mono: JetBrains Mono, monospace;
+  /* Light theme following design system tokens */
+  --background: #ffffff; /* Pure white background */
+  --foreground: #0f172a; /* Deep navy text from design system */
+  --card: #f8fafc; /* Off-white card background */
+  --card-foreground: #0f172a; /* Deep navy card text */
+  --popover: #ffffff; /* Pure white popover */
+  --popover-foreground: #0f172a; /* Deep navy popover text */
+  --primary: #1e40af; /* Deep blue from design system */
+  --primary-foreground: #f8fafc; /* Off-white on primary */
+  --secondary: #e2e8f0; /* Light slate for secondary elements */
+  --secondary-foreground: #334155; /* Slate blue text on secondary */
+  --muted: #f1f5f9; /* Very light slate for muted backgrounds */
+  --muted-foreground: #64748b; /* Medium slate for muted text */
+  --accent: #f59e0b; /* Amber accent from design system */
+  --accent-foreground: #0f172a; /* Deep navy on accent */
+  --destructive: #ef4444; /* Red from design system */
+  --destructive-foreground: #f8fafc; /* Off-white on destructive */
+  --border: #e2e8f0; /* Light slate borders */
+  --input: #f8fafc; /* Off-white input backgrounds */
+  --ring: #f59e0b; /* Amber focus rings */
+  --chart-1: #1e40af; /* Deep blue for charts */
+  --chart-2: #f59e0b; /* Amber for charts */
+  --chart-3: #10b981; /* Green for charts */
+  --chart-4: #ef4444; /* Red for charts */
+  --chart-5: #8b5cf6; /* Purple for charts */
+  --sidebar: #f8fafc; /* Off-white sidebar */
+  --sidebar-foreground: #0f172a; /* Deep navy sidebar text */
+  --sidebar-primary: #f59e0b; /* Amber sidebar primary */
+  --sidebar-primary-foreground: #0f172a; /* Deep navy on sidebar primary */
+  --sidebar-accent: #e2e8f0; /* Light slate sidebar accent */
+  --sidebar-accent-foreground: #334155; /* Slate blue on sidebar accent */
+  --sidebar-border: #e2e8f0; /* Light slate sidebar borders */
+  --sidebar-ring: #f59e0b; /* Amber sidebar focus rings */
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif Pro", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
   --radius: 0.75rem;
-  --shadow-2xs: 0px 1px 4px 0px hsl(0 0% 0% / 0.03);
-  --shadow-xs: 0px 1px 4px 0px hsl(0 0% 0% / 0.03);
-  --shadow-sm: 0px 1px 4px 0px hsl(0 0% 0% / 0.05), 0px 1px 2px -1px hsl(0 0% 0% / 0.05);
-  --shadow: 0px 1px 4px 0px hsl(0 0% 0% / 0.05), 0px 1px 2px -1px hsl(0 0% 0% / 0.05);
-  --shadow-md: 0px 1px 4px 0px hsl(0 0% 0% / 0.05), 0px 2px 4px -1px hsl(0 0% 0% / 0.05);
-  --shadow-lg: 0px 1px 4px 0px hsl(0 0% 0% / 0.05), 0px 4px 6px -1px hsl(0 0% 0% / 0.05);
-  --shadow-xl: 0px 1px 4px 0px hsl(0 0% 0% / 0.05), 0px 8px 10px -1px hsl(0 0% 0% / 0.05);
-  --shadow-2xl: 0px 1px 4px 0px hsl(0 0% 0% / 0.13);
+  --shadow-2xs: 0px 1px 4px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0px 1px 4px 0px hsl(0 0% 0% / 0.08);
+  --shadow-sm: 0px 1px 4px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow: 0px 1px 4px 0px hsl(0 0% 0% / 0.1), 0px 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow-md: 0px 1px 4px 0px hsl(0 0% 0% / 0.1), 0px 2px 4px -1px hsl(0 0% 0% / 0.1);
+  --shadow-lg: 0px 1px 4px 0px hsl(0 0% 0% / 0.1), 0px 4px 6px -1px hsl(0 0% 0% / 0.1);
+  --shadow-xl: 0px 1px 4px 0px hsl(0 0% 0% / 0.1), 0px 8px 10px -1px hsl(0 0% 0% / 0.1);
+  --shadow-2xl: 0px 1px 4px 0px hsl(0 0% 0% / 0.2);
   --tracking-normal: 0rem;
   --spacing: 0.25rem;
   --duration: 10s;
@@ -165,15 +166,15 @@ body {
   letter-spacing: var(--tracking-normal);
 }
 
-/* Added custom text selection styling with orange background and dark text */
+/* Light theme text selection styling with amber background and dark text */
 ::selection {
-  background-color: #e78a53;
-  color: #121113;
+  background-color: #fbbf24;
+  color: #0f172a;
 }
 
 ::-moz-selection {
-  background-color: #e78a53;
-  color: #121113;
+  background-color: #fbbf24;
+  color: #0f172a;
 }
 
 @layer base {

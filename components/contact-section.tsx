@@ -45,19 +45,19 @@ export function ContactSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border backdrop-blur-sm mb-6"
           >
             <Send className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-white/80">
+            <span className="text-sm font-medium text-secondary-foreground">
               Get In Touch
             </span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent mb-4 font-serif">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-foreground via-foreground to-foreground/60 bg-clip-text text-transparent mb-4 font-serif">
             Ready to Transform Your Business?
           </h2>
 
-          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Let's discuss how our enterprise solutions can drive your digital
             transformation forward.
           </p>
@@ -73,10 +73,10 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6 font-serif">
+              <h3 className="text-2xl font-bold text-foreground mb-6 font-serif">
                 Let's Start a Conversation
               </h3>
-              <p className="text-white/60 mb-8">
+              <p className="text-muted-foreground mb-8">
                 Our team of experts is ready to help you implement cutting-edge
                 solutions that will revolutionize your business operations.
               </p>
@@ -88,8 +88,8 @@ export function ContactSection() {
                   <Mail className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">Email Us</p>
-                  <p className="text-white/60">tokenist.solutions@gmail.com</p>
+                  <p className="text-foreground font-medium">Email Us</p>
+                  <p className="text-muted-foreground">tokenist.solutions@gmail.com</p>
                 </div>
               </div>
 
@@ -98,8 +98,8 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">Call Us</p>
-                  <p className="text-white/60">+84 902 757 816</p>
+                  <p className="text-foreground font-medium">Call Us</p>
+                  <p className="text-muted-foreground">+84 902 757 816</p>
                 </div>
               </div>
 
@@ -123,14 +123,14 @@ export function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
+            className="bg-card backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-white/80 mb-2"
+                    className="block text-sm font-medium text-foreground mb-2"
                   >
                     Full Name
                   </label>
@@ -140,7 +140,7 @@ export function ContactSection() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50"
+                    className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50"
                     placeholder="John Doe"
                     required
                   />
@@ -148,7 +148,7 @@ export function ContactSection() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-white/80 mb-2"
+                    className="block text-sm font-medium text-foreground mb-2"
                   >
                     Email Address
                   </label>
@@ -158,7 +158,7 @@ export function ContactSection() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50"
+                    className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50"
                     placeholder="john@company.com"
                     required
                   />
@@ -168,7 +168,7 @@ export function ContactSection() {
               <div>
                 <label
                   htmlFor="company"
-                  className="block text-sm font-medium text-white/80 mb-2"
+                  className="block text-sm font-medium text-foreground mb-2"
                 >
                   Company Name
                 </label>
@@ -178,7 +178,7 @@ export function ContactSection() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50"
+                  className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50"
                   placeholder="Your Company"
                 />
               </div>
@@ -186,7 +186,7 @@ export function ContactSection() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-white/80 mb-2"
+                  className="block text-sm font-medium text-foreground mb-2"
                 >
                   Message
                 </label>
@@ -196,7 +196,7 @@ export function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50 resize-none"
+                  className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50 resize-none"
                   placeholder="Tell us about your project and requirements..."
                   required
                 />
@@ -206,7 +206,7 @@ export function ContactSection() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-accent to-accent/80 text-white font-medium py-3 px-6 rounded-lg shadow-lg shadow-accent/25 hover:shadow-accent/40 transition-all duration-200 flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-accent to-accent/80 text-accent-foreground font-medium py-3 px-6 rounded-lg shadow-lg shadow-accent/25 hover:shadow-accent/40 transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
                 Send Message

@@ -3,17 +3,12 @@ import { ContactSection } from "@/components/contact-section";
 import Features from "@/components/features";
 import Hero from "@/components/home/hero";
 import { StickyFooter } from "@/components/sticky-footer";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.remove("light", "system");
-    root.classList.add("dark");
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +43,7 @@ export default function Home() {
         className="absolute inset-0 z-0"
         style={{
           background:
-            "radial-gradient(ellipse 50% 35% at 50% 0%, rgba(245, 158, 11, 0.08), transparent 60%), #0F172A",
+            "radial-gradient(ellipse 50% 35% at 50% 0%, rgba(245, 158, 11, 0.06), transparent 60%), #ffffff",
         }}
       />
 
@@ -129,7 +124,7 @@ export default function Home() {
       {/* Mobile Header */}
       <header className="sticky top-4 z-[9999] mx-4 flex w-auto flex-row items-center justify-between rounded-full bg-background/80 backdrop-blur-sm border border-border/50 shadow-lg md:hidden px-4 py-3">
         <a className="flex items-center justify-center gap-2" href="#">
-          <img src="/svc-logo.svg" alt="SVC" className="h-7 w-7" />
+          <img src="/logo.svg" alt="Tokenist" className="h-7 w-7" />
         </a>
 
         <button
@@ -175,12 +170,13 @@ export default function Home() {
                 Contact
               </button>
               <div className="border-t border-border/50 pt-4 mt-4 flex flex-col space-y-3">
-                <a
+                <Link
                   href="/contact"
+                  prefetch={true}
                   className="px-4 py-3 text-lg font-bold text-center bg-gradient-to-b from-primary to-primary/80 text-primary-foreground rounded-lg shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                 >
                   Get Consultation
-                </a>
+                </Link>
               </div>
             </nav>
           </div>

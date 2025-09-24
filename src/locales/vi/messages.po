@@ -27,6 +27,14 @@ msgstr "{0}"
 msgid "{feature}"
 msgstr "{feature}"
 
+#: app/contact/page.tsx
+msgid "{service}"
+msgstr "{service}"
+
+#: app/contact/page.tsx
+msgid "24/7 support and maintenance"
+msgstr "Hỗ trợ và bảo trì 24/7"
+
 #: app/erp/page.tsx
 msgid "Access your ERP system anywhere, anytime with responsive design and mobile apps."
 msgstr "Truy cập hệ thống ERP của bạn mọi lúc, mọi nơi với thiết kế tương thích và ứng dụng di động."
@@ -47,10 +55,15 @@ msgstr "Hưởng lợi từ cộng đồng ERP lớn nhất với hàng nghìn �
 msgid "Built on the world's most popular open-source ERP platform"
 msgstr "Xây dựng trên nền tảng ERP mã nguồn mở phổ biến nhất thế giới"
 
+#: app/contact/page.tsx
+msgid "Business Hours"
+msgstr "Giờ làm việc"
+
 #: components/contact-section.tsx
 msgid "Call Us"
 msgstr "Gọi cho chúng tôi"
 
+#: app/contact/page.tsx
 #: components/contact-section.tsx
 msgid "Company Name"
 msgstr "Tên công ty"
@@ -76,17 +89,33 @@ msgstr "Giải pháp ERP toàn diện cho doanh nghiệp hiện đại"
 msgid "Contact"
 msgstr "Liên hệ"
 
+#: app/contact/page.tsx
+msgid "Contact Us"
+msgstr "Liên hệ với chúng tôi"
+
 #: app/erp/page.tsx
 msgid "Cost Effective"
 msgstr "Tiết Kiệm Chi Phí"
+
+#: app/contact/page.tsx
+msgid "Custom solutions tailored to your needs"
+msgstr "Giải pháp tùy chỉnh phù hợp với nhu cầu của bạn"
 
 #: components/home/hero.tsx
 msgid "Data Analytics"
 msgstr "Phân tích dữ liệu"
 
+#: app/contact/page.tsx
+msgid "Email"
+msgstr "Email"
+
 #: components/contact-section.tsx
 msgid "Email Address"
 msgstr "Địa chỉ email"
+
+#: app/contact/page.tsx
+msgid "Email Address *"
+msgstr "Địa chỉ Email *"
 
 #: app/erp/page.tsx
 #: components/contact-section.tsx
@@ -122,6 +151,10 @@ msgstr "ERP tích hợp tất cả các quy trình kinh doanh của bạn vào m
 msgid "ERP Workflow Journey"
 msgstr "Hành Trình Quy Trình ERP"
 
+#: app/contact/page.tsx
+msgid "Expert team with 10+ years experience"
+msgstr "Đội ngũ chuyên gia với hơn 10 năm kinh nghiệm"
+
 #: app/erp/page.tsx
 msgid "Explore Modules"
 msgstr "Khám Phá Các Phân Hệ"
@@ -129,6 +162,14 @@ msgstr "Khám Phá Các Phân Hệ"
 #: components/home/hero.tsx
 msgid "Explore Solutions"
 msgstr "Khám Phá Giải Pháp"
+
+#: app/contact/page.tsx
+msgid "Extraordinary"
+msgstr "Phi Thường"
+
+#: app/contact/page.tsx
+msgid "Fill out the form below and we'll get back to you within 24 hours."
+msgstr "Điền vào biểu mẫu bên dưới và chúng tôi sẽ liên hệ lại với bạn trong vòng 24 giờ."
 
 #: components/home/hero.tsx
 msgid "Financial Management"
@@ -142,6 +183,10 @@ msgstr "Từ đơn hàng đến giao hàng - xem cách hệ thống ERP của ch
 msgid "Full Name"
 msgstr "Họ và tên"
 
+#: app/contact/page.tsx
+msgid "Full Name *"
+msgstr "Họ và tên *"
+
 #: app/erp/page.tsx
 msgid "Fully Customizable"
 msgstr "Hoàn Toàn Tùy Chỉnh"
@@ -154,6 +199,10 @@ msgstr "Nhận tư vấn"
 #: app/erp/page.tsx
 msgid "Get ERP Consultation"
 msgstr "Nhận Tư Vấn ERP"
+
+#: app/contact/page.tsx
+msgid "Get in Touch"
+msgstr "Liên hệ"
 
 #: components/contact-section.tsx
 msgid "Get In Touch"
@@ -179,6 +228,10 @@ msgstr "Các ứng dụng kinh doanh tích hợp hoạt động liền mạch c�
 msgid "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
 msgstr "Giải pháp phần mềm doanh nghiệp hàng đầu trong hệ thống ERP, phân tích Big Data, thiết kế website hiện đại và trí tuệ nhân tạo. Tối ưu hóa hoạt động và khai thác thông tin chi tiết để tăng trưởng bền vững."
 
+#: app/contact/page.tsx
+msgid "Let's Build Something"
+msgstr "Hãy Xây Dựng Điều Gì Đó"
+
 #: components/contact-section.tsx
 msgid "Let's discuss how our enterprise solutions can drive your digital transformation forward."
 msgstr "Hãy thảo luận về cách các giải pháp doanh nghiệp của chúng tôi có thể thúc đẩy chuyển đổi số của bạn."
@@ -195,9 +248,17 @@ msgstr "Hãy bắt đầu cuộc trò chuyện"
 msgid "Message"
 msgstr "Tin nhắn"
 
+#: app/contact/page.tsx
+msgid "Message Sent!"
+msgstr "Tin nhắn đã được gửi!"
+
 #: app/erp/page.tsx
 msgid "Mobile Ready"
 msgstr "Sẵn Sàng Di Động"
+
+#: app/contact/page.tsx
+msgid "Mon - Fri, 9AM - 6PM"
+msgstr "Thứ 2 - Thứ 6, 9 giờ sáng - 6 giờ chiều"
 
 #: app/erp/page.tsx
 msgid "No licensing fees, lower total cost of ownership, and transparent pricing structure."
@@ -207,6 +268,14 @@ msgstr "Không phí bản quyền, tổng chi phí sở hữu thấp hơn và c�
 msgid "Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations."
 msgstr "Đội ngũ chuyên gia của chúng tôi sẵn sàng giúp bạn triển khai các giải pháp tiên tiến sẽ cách mạng hóa hoạt động kinh doanh của bạn."
 
+#: app/contact/page.tsx
+msgid "Phone"
+msgstr "Điện thoại"
+
+#: app/contact/page.tsx
+msgid "Phone Number"
+msgstr "Số điện thoại"
+
 #: app/erp/page.tsx
 msgid "Powered by Odoo Framework"
 msgstr "Powered by Odoo Framework"
@@ -215,9 +284,21 @@ msgstr "Powered by Odoo Framework"
 msgid "Process Automation"
 msgstr "Tự động hóa quy trình"
 
+#: app/contact/page.tsx
+msgid "Project Details *"
+msgstr "Chi tiết dự án *"
+
+#: app/contact/page.tsx
+msgid "Proven track record of success"
+msgstr "Hồ sơ thành công đã được chứng minh"
+
 #: app/erp/page.tsx
 msgid "Rapid Implementation"
 msgstr "Triển Khai Nhanh Chóng"
+
+#: app/contact/page.tsx
+msgid "Ready to transform your business with cutting-edge technology? Our team of experts is here to turn your vision into reality. Let's start the conversation."
+msgstr "Sẵn sàng chuyển đổi doanh nghiệp của bạn với công nghệ tiên tiến? Đội ngũ chuyên gia của chúng tôi ở đây để biến tầm nhìn của bạn thành hiện thực. Hãy bắt đầu cuộc trò chuyện."
 
 #: app/erp/page.tsx
 #: components/contact-section.tsx
@@ -236,9 +317,22 @@ msgstr "Đặt Lịch Tư Vấn Miễn Phí"
 msgid "Security & Compliance"
 msgstr "Bảo mật & tuân thủ"
 
+#: app/contact/page.tsx
+msgid "Select a service"
+msgstr "Chọn dịch vụ"
+
+#: app/contact/page.tsx
 #: components/contact-section.tsx
 msgid "Send Message"
 msgstr "Gửi tin nhắn"
+
+#: app/contact/page.tsx
+msgid "Sending..."
+msgstr "Đang gửi..."
+
+#: app/contact/page.tsx
+msgid "Service of Interest"
+msgstr "Dịch vụ quan tâm"
 
 #: app/page.tsx
 #: app/page.tsx
@@ -249,6 +343,10 @@ msgstr "Dịch vụ"
 msgid "Start Your ERP Journey"
 msgstr "Bắt Đầu Hành Trình ERP Của Bạn"
 
+#: app/contact/page.tsx
+msgid "Start Your Project"
+msgstr "Bắt đầu dự án của bạn"
+
 #: components/home/hero.tsx
 msgid "Streamlined workflows & operations"
 msgstr "Quy trình làm việc & hoạt động được tối ưu hóa"
@@ -257,6 +355,14 @@ msgstr "Quy trình làm việc & hoạt động được tối ưu hóa"
 msgid "Tailor every aspect of the system to match your unique business processes and requirements."
 msgstr "Tùy chỉnh mọi khía cạnh của hệ thống để phù hợp với các quy trình kinh doanh và yêu cầu độc đáo của bạn."
 
+#: app/contact/page.tsx
+msgid "Thank you for reaching out. We'll get back to you within 24 hours."
+msgstr "Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi lại trong vòng 24 giờ."
+
+#: app/contact/page.tsx
+msgid "This form will reset automatically..."
+msgstr "Biểu mẫu này sẽ tự động đặt lại..."
+
 #: components/home/hero.tsx
 msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
 msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
@@ -264,3 +370,7 @@ msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently
 #: app/erp/page.tsx
 msgid "Why Choose Our Odoo-Based ERP?"
 msgstr "Tại Sao Chọn ERP Dựa Trên Odoo Của Chúng Tôi?"
+
+#: app/contact/page.tsx
+msgid "Why Choose Us?"
+msgstr "Tại sao chọn chúng tôi?"

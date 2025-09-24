@@ -27,6 +27,14 @@ msgstr "{0}"
 msgid "{feature}"
 msgstr "{feature}"
 
+#: app/contact/page.tsx
+msgid "{service}"
+msgstr "{service}"
+
+#: app/contact/page.tsx
+msgid "24/7 support and maintenance"
+msgstr "24/7 support and maintenance"
+
 #: app/erp/page.tsx
 msgid "Access your ERP system anywhere, anytime with responsive design and mobile apps."
 msgstr "Access your ERP system anywhere, anytime with responsive design and mobile apps."
@@ -47,10 +55,15 @@ msgstr "Benefit from the largest ERP community with thousands of apps and integr
 msgid "Built on the world's most popular open-source ERP platform"
 msgstr "Built on the world's most popular open-source ERP platform"
 
+#: app/contact/page.tsx
+msgid "Business Hours"
+msgstr "Business Hours"
+
 #: components/contact-section.tsx
 msgid "Call Us"
 msgstr "Call Us"
 
+#: app/contact/page.tsx
 #: components/contact-section.tsx
 msgid "Company Name"
 msgstr "Company Name"
@@ -76,17 +89,33 @@ msgstr "Comprehensive ERP Solutions for Modern Enterprises"
 msgid "Contact"
 msgstr "Contact"
 
+#: app/contact/page.tsx
+msgid "Contact Us"
+msgstr "Contact Us"
+
 #: app/erp/page.tsx
 msgid "Cost Effective"
 msgstr "Cost Effective"
+
+#: app/contact/page.tsx
+msgid "Custom solutions tailored to your needs"
+msgstr "Custom solutions tailored to your needs"
 
 #: components/home/hero.tsx
 msgid "Data Analytics"
 msgstr "Data Analytics"
 
+#: app/contact/page.tsx
+msgid "Email"
+msgstr "Email"
+
 #: components/contact-section.tsx
 msgid "Email Address"
 msgstr "Email Address"
+
+#: app/contact/page.tsx
+msgid "Email Address *"
+msgstr "Email Address *"
 
 #: app/erp/page.tsx
 #: components/contact-section.tsx
@@ -122,6 +151,10 @@ msgstr "ERP integrates all of your business processes into one unified system, e
 msgid "ERP Workflow Journey"
 msgstr "ERP Workflow Journey"
 
+#: app/contact/page.tsx
+msgid "Expert team with 10+ years experience"
+msgstr "Expert team with 10+ years experience"
+
 #: app/erp/page.tsx
 msgid "Explore Modules"
 msgstr "Explore Modules"
@@ -129,6 +162,14 @@ msgstr "Explore Modules"
 #: components/home/hero.tsx
 msgid "Explore Solutions"
 msgstr "Explore Solutions"
+
+#: app/contact/page.tsx
+msgid "Extraordinary"
+msgstr "Extraordinary"
+
+#: app/contact/page.tsx
+msgid "Fill out the form below and we'll get back to you within 24 hours."
+msgstr "Fill out the form below and we'll get back to you within 24 hours."
 
 #: components/home/hero.tsx
 msgid "Financial Management"
@@ -142,6 +183,10 @@ msgstr "From order to delivery - see how our ERP system streamlines your entire 
 msgid "Full Name"
 msgstr "Full Name"
 
+#: app/contact/page.tsx
+msgid "Full Name *"
+msgstr "Full Name *"
+
 #: app/erp/page.tsx
 msgid "Fully Customizable"
 msgstr "Fully Customizable"
@@ -154,6 +199,10 @@ msgstr "Get Consultation"
 #: app/erp/page.tsx
 msgid "Get ERP Consultation"
 msgstr "Get ERP Consultation"
+
+#: app/contact/page.tsx
+msgid "Get in Touch"
+msgstr "Get in Touch"
 
 #: components/contact-section.tsx
 msgid "Get In Touch"
@@ -179,6 +228,10 @@ msgstr "Integrated business applications that work seamlessly together"
 msgid "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
 msgstr "Leading enterprise software solutions in ERP systems, Big Data analytics, modern website design, and artificial intelligence. Streamline operations and unlock insights for sustainable growth."
 
+#: app/contact/page.tsx
+msgid "Let's Build Something"
+msgstr "Let's Build Something"
+
 #: components/contact-section.tsx
 msgid "Let's discuss how our enterprise solutions can drive your digital transformation forward."
 msgstr "Let's discuss how our enterprise solutions can drive your digital transformation forward."
@@ -195,9 +248,17 @@ msgstr "Let's Start a Conversation"
 msgid "Message"
 msgstr "Message"
 
+#: app/contact/page.tsx
+msgid "Message Sent!"
+msgstr "Message Sent!"
+
 #: app/erp/page.tsx
 msgid "Mobile Ready"
 msgstr "Mobile Ready"
+
+#: app/contact/page.tsx
+msgid "Mon - Fri, 9AM - 6PM"
+msgstr "Mon - Fri, 9AM - 6PM"
 
 #: app/erp/page.tsx
 msgid "No licensing fees, lower total cost of ownership, and transparent pricing structure."
@@ -207,6 +268,14 @@ msgstr "No licensing fees, lower total cost of ownership, and transparent pricin
 msgid "Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations."
 msgstr "Our team of experts is ready to help you implement cutting-edge solutions that will revolutionize your business operations."
 
+#: app/contact/page.tsx
+msgid "Phone"
+msgstr "Phone"
+
+#: app/contact/page.tsx
+msgid "Phone Number"
+msgstr "Phone Number"
+
 #: app/erp/page.tsx
 msgid "Powered by Odoo Framework"
 msgstr "Powered by Odoo Framework"
@@ -215,9 +284,21 @@ msgstr "Powered by Odoo Framework"
 msgid "Process Automation"
 msgstr "Process Automation"
 
+#: app/contact/page.tsx
+msgid "Project Details *"
+msgstr "Project Details *"
+
+#: app/contact/page.tsx
+msgid "Proven track record of success"
+msgstr "Proven track record of success"
+
 #: app/erp/page.tsx
 msgid "Rapid Implementation"
 msgstr "Rapid Implementation"
+
+#: app/contact/page.tsx
+msgid "Ready to transform your business with cutting-edge technology? Our team of experts is here to turn your vision into reality. Let's start the conversation."
+msgstr "Ready to transform your business with cutting-edge technology? Our team of experts is here to turn your vision into reality. Let's start the conversation."
 
 #: app/erp/page.tsx
 #: components/contact-section.tsx
@@ -236,9 +317,22 @@ msgstr "Schedule Free Consultation"
 msgid "Security & Compliance"
 msgstr "Security & Compliance"
 
+#: app/contact/page.tsx
+msgid "Select a service"
+msgstr "Select a service"
+
+#: app/contact/page.tsx
 #: components/contact-section.tsx
 msgid "Send Message"
 msgstr "Send Message"
+
+#: app/contact/page.tsx
+msgid "Sending..."
+msgstr "Sending..."
+
+#: app/contact/page.tsx
+msgid "Service of Interest"
+msgstr "Service of Interest"
 
 #: app/page.tsx
 #: app/page.tsx
@@ -249,6 +343,10 @@ msgstr "Services"
 msgid "Start Your ERP Journey"
 msgstr "Start Your ERP Journey"
 
+#: app/contact/page.tsx
+msgid "Start Your Project"
+msgstr "Start Your Project"
+
 #: components/home/hero.tsx
 msgid "Streamlined workflows & operations"
 msgstr "Streamlined workflows & operations"
@@ -257,6 +355,14 @@ msgstr "Streamlined workflows & operations"
 msgid "Tailor every aspect of the system to match your unique business processes and requirements."
 msgstr "Tailor every aspect of the system to match your unique business processes and requirements."
 
+#: app/contact/page.tsx
+msgid "Thank you for reaching out. We'll get back to you within 24 hours."
+msgstr "Thank you for reaching out. We'll get back to you within 24 hours."
+
+#: app/contact/page.tsx
+msgid "This form will reset automatically..."
+msgstr "This form will reset automatically..."
+
 #: components/home/hero.tsx
 msgid "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
 msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently</4>"
@@ -264,3 +370,7 @@ msgstr "Transform Your <0>Business</0> <1>&</1> <2/><3>Data</3> <4>Intelligently
 #: app/erp/page.tsx
 msgid "Why Choose Our Odoo-Based ERP?"
 msgstr "Why Choose Our Odoo-Based ERP?"
+
+#: app/contact/page.tsx
+msgid "Why Choose Us?"
+msgstr "Why Choose Us?"

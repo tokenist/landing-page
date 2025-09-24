@@ -1,6 +1,7 @@
 "use client";
 
 import { BackButton } from "@/components/back-button";
+import { Trans } from "@lingui/react/macro";
 import { motion } from "framer-motion";
 import { CheckCircle, Clock, Mail, Phone, Send } from "lucide-react";
 import Link from "next/link";
@@ -104,7 +105,7 @@ export default function ContactPage() {
             >
               <Send className="w-4 h-4 text-accent" />
               <span className="text-sm font-medium text-secondary-foreground">
-                Contact Us
+                <Trans>Contact Us</Trans>
               </span>
             </motion.div>
 
@@ -114,10 +115,10 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-foreground via-foreground to-foreground/60 bg-clip-text text-transparent mb-6 font-serif"
             >
-              Let's Build Something
+              <Trans>Let's Build Something</Trans>
               <br />
               <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-                Extraordinary
+                <Trans>Extraordinary</Trans>
               </span>
             </motion.h1>
 
@@ -127,9 +128,11 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto"
             >
-              Ready to transform your business with cutting-edge technology? Our
-              team of experts is here to turn your vision into reality. Let's
-              start the conversation.
+              <Trans>
+                Ready to transform your business with cutting-edge technology?
+                Our team of experts is here to turn your vision into reality.
+                Let's start the conversation.
+              </Trans>
             </motion.p>
           </motion.div>
 
@@ -143,7 +146,7 @@ export default function ContactPage() {
             >
               <div className="bg-card backdrop-blur-sm border border-border rounded-2xl p-6 shadow-lg">
                 <h3 className="text-xl font-bold text-foreground mb-6 font-serif">
-                  Get in Touch
+                  <Trans>Get in Touch</Trans>
                 </h3>
 
                 <div className="space-y-4">
@@ -152,7 +155,9 @@ export default function ContactPage() {
                       <Mail className="w-4 h-4 text-accent" />
                     </div>
                     <div>
-                      <p className="text-muted-foreground text-sm">Email</p>
+                      <p className="text-muted-foreground text-sm">
+                        <Trans>Email</Trans>
+                      </p>
                       <p className="text-foreground font-medium">
                         tokenist.solutions@gmail.com
                       </p>
@@ -164,7 +169,9 @@ export default function ContactPage() {
                       <Phone className="w-4 h-4 text-accent" />
                     </div>
                     <div>
-                      <p className="text-muted-foreground text-sm">Phone</p>
+                      <p className="text-muted-foreground text-sm">
+                        <Trans>Phone</Trans>
+                      </p>
                       <p className="text-foreground font-medium">
                         +84 902 757 816
                       </p>
@@ -177,10 +184,10 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-muted-foreground text-sm">
-                        Business Hours
+                        <Trans>Business Hours</Trans>
                       </p>
                       <p className="text-foreground font-medium">
-                        Mon - Fri, 9AM - 6PM
+                        <Trans>Mon - Fri, 9AM - 6PM</Trans>
                       </p>
                     </div>
                   </div>
@@ -189,24 +196,24 @@ export default function ContactPage() {
 
               <div className="bg-card backdrop-blur-sm border border-border rounded-2xl p-6 shadow-lg">
                 <h4 className="text-lg font-semibold text-foreground mb-4">
-                  Why Choose Us?
+                  <Trans>Why Choose Us?</Trans>
                 </h4>
                 <ul className="space-y-3 text-sm text-muted-foreground">
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    Expert team with 10+ years experience
+                    <Trans>Expert team with 10+ years experience</Trans>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    Custom solutions tailored to your needs
+                    <Trans>Custom solutions tailored to your needs</Trans>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    24/7 support and maintenance
+                    <Trans>24/7 support and maintenance</Trans>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-accent" />
-                    Proven track record of success
+                    <Trans>Proven track record of success</Trans>
                   </li>
                 </ul>
               </div>
@@ -219,15 +226,17 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="lg:col-span-2"
             >
-              <div className="bg-card backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg">
+              <div className="bg-card backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg font-sans">
                 {!isSubmitted ? (
                   <>
-                    <h3 className="text-2xl font-bold text-foreground mb-6 font-serif">
-                      Start Your Project
+                    <h3 className="text-2xl font-bold text-foreground mb-6">
+                      <Trans>Start Your Project</Trans>
                     </h3>
                     <p className="text-muted-foreground mb-8">
-                      Fill out the form below and we'll get back to you within
-                      24 hours.
+                      <Trans>
+                        Fill out the form below and we'll get back to you within
+                        24 hours.
+                      </Trans>
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
@@ -237,7 +246,7 @@ export default function ContactPage() {
                             htmlFor="name"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
-                            Full Name *
+                            <Trans>Full Name *</Trans>
                           </label>
                           <input
                             type="text"
@@ -255,7 +264,7 @@ export default function ContactPage() {
                             htmlFor="email"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
-                            Email Address *
+                            <Trans>Email Address *</Trans>
                           </label>
                           <input
                             type="email"
@@ -276,7 +285,7 @@ export default function ContactPage() {
                             htmlFor="company"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
-                            Company Name
+                            <Trans>Company Name</Trans>
                           </label>
                           <input
                             type="text"
@@ -293,7 +302,7 @@ export default function ContactPage() {
                             htmlFor="phone"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
-                            Phone Number
+                            <Trans>Phone Number</Trans>
                           </label>
                           <input
                             type="tel"
@@ -312,7 +321,7 @@ export default function ContactPage() {
                           htmlFor="service"
                           className="block text-sm font-medium text-foreground mb-2"
                         >
-                          Service of Interest
+                          <Trans>Service of Interest</Trans>
                         </label>
                         <select
                           id="service"
@@ -322,7 +331,7 @@ export default function ContactPage() {
                           className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50 transition-colors"
                         >
                           <option value="" className="bg-background">
-                            Select a service
+                            <Trans>Select a service</Trans>
                           </option>
                           {services.map((service) => (
                             <option
@@ -330,7 +339,7 @@ export default function ContactPage() {
                               value={service}
                               className="bg-background"
                             >
-                              {service}
+                              <Trans>{service}</Trans>
                             </option>
                           ))}
                         </select>
@@ -341,7 +350,7 @@ export default function ContactPage() {
                           htmlFor="message"
                           className="block text-sm font-medium text-foreground mb-2"
                         >
-                          Project Details *
+                          <Trans>Project Details *</Trans>
                         </label>
                         <textarea
                           id="message"
@@ -365,12 +374,12 @@ export default function ContactPage() {
                         {isSubmitting ? (
                           <>
                             <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                            Sending...
+                            <Trans>Sending...</Trans>
                           </>
                         ) : (
                           <>
                             <Send className="w-4 h-4" />
-                            Send Message
+                            <Trans>Send Message</Trans>
                           </>
                         )}
                       </motion.button>
@@ -387,14 +396,16 @@ export default function ContactPage() {
                       <CheckCircle className="w-8 h-8 text-green-500" />
                     </div>
                     <h3 className="text-2xl font-bold text-foreground mb-4">
-                      Message Sent!
+                      <Trans>Message Sent!</Trans>
                     </h3>
                     <p className="text-muted-foreground mb-6">
-                      Thank you for reaching out. We'll get back to you within
-                      24 hours.
+                      <Trans>
+                        Thank you for reaching out. We'll get back to you within
+                        24 hours.
+                      </Trans>
                     </p>
                     <div className="text-sm text-muted-foreground/60">
-                      This form will reset automatically...
+                      <Trans>This form will reset automatically...</Trans>
                     </div>
                   </motion.div>
                 )}

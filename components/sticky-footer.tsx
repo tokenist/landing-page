@@ -14,7 +14,7 @@ export function StickyFooter() {
           const scrollTop = window.scrollY
           const windowHeight = window.innerHeight
           const documentHeight = document.documentElement.scrollHeight
-          const isNearBottom = scrollTop + windowHeight >= documentHeight - 100
+          const isNearBottom = scrollTop + windowHeight >= documentHeight - 50
 
           setIsAtBottom(isNearBottom)
           ticking = false
@@ -53,24 +53,24 @@ export function StickyFooter() {
                 <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
-                  onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
-                  onMouseLeave={(e) => (e.target.style.color = "#121113")}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(18, 17, 19, 0.8)")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#121113")}
                 >
                   Home
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
-                  onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
-                  onMouseLeave={(e) => (e.target.style.color = "#121113")}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(18, 17, 19, 0.8)")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#121113")}
                 >
                   Docs
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
-                  onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
-                  onMouseLeave={(e) => (e.target.style.color = "#121113")}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(18, 17, 19, 0.8)")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#121113")}
                 >
                   Components
                 </li>
@@ -79,24 +79,24 @@ export function StickyFooter() {
                 <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
-                  onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
-                  onMouseLeave={(e) => (e.target.style.color = "#121113")}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(18, 17, 19, 0.8)")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#121113")}
                 >
                   Github
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
-                  onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
-                  onMouseLeave={(e) => (e.target.style.color = "#121113")}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(18, 17, 19, 0.8)")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#121113")}
                 >
                   Twitter
                 </li>
                 <li
                   className="hover:underline cursor-pointer transition-colors"
                   style={{ color: "#121113" }}
-                  onMouseEnter={(e) => (e.target.style.color = "rgba(18, 17, 19, 0.8)")}
-                  onMouseLeave={(e) => (e.target.style.color = "#121113")}
+                  onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(18, 17, 19, 0.8)")}
+                  onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#121113")}
                 >
                   Discord
                 </li>
@@ -109,7 +109,7 @@ export function StickyFooter() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              v0
+              Tokenist
             </motion.h2>
           </div>
         </motion.div>

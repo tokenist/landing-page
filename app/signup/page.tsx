@@ -28,14 +28,14 @@ export default function SignupPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (formData.password !== formData.confirmPassword) {
-      console.log("[v0] Password mismatch")
+      console.log("[Tokenist] Password mismatch")
       return
     }
     setIsLoading(true)
     // Simulate signup process
     await new Promise((resolve) => setTimeout(resolve, 1000))
     setIsLoading(false)
-    console.log("[v0] Signup attempt:", formData)
+    console.log("[Tokenist] Signup attempt:", formData)
   }
 
   return (
@@ -80,7 +80,7 @@ export default function SignupPage() {
             </div>
           </Link>
           <h1 className="text-3xl font-bold text-white mb-2">Create account</h1>
-          <p className="text-zinc-400">Join thousands of developers building with v0</p>
+          <p className="text-zinc-400">Join thousands of developers building with Tokenist</p>
         </div>
 
         {/* Signup Form */}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="60 60 280 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base Token -->
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#F59E0B" stroke-width="16" />
+  
+  <!-- Inner Circuit Pattern -->
+  <path d="M200,120 L200,160 M200,240 L200,280
+           M120,200 L160,200 M240,200 L280,200" 
+        stroke="#F59E0B" stroke-width="12" stroke-linecap="round" />
+  
+  <!-- Diagonal Connection Lines with Dynamic Length -->
+  <path d="M155,155 L175,175 M225,175 L245,155
+           M155,245 L175,225 M225,225 L245,245" 
+        stroke="#FBBF24" stroke-width="12" stroke-linecap="round" />
+  
+  <!-- Center Point - Filled -->
+  <circle cx="200" cy="200" r="25" fill="#FFC247" />
+  
+  <!-- Adding subtle gradient overlay for smoother appearance -->
+  <radialGradient id="darkGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+    <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.15" />
+    <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+  </radialGradient>
+  <circle cx="200" cy="200" r="140" fill="url(#darkGradient)" />
+</svg>

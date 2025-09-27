@@ -1,5 +1,6 @@
 import LinguiProvider from "@/components/i18n-provider";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import type React from "react";
 import "./globals.css";
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className="font-sans">
         <LinguiProvider>{children}</LinguiProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

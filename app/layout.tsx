@@ -1,7 +1,8 @@
+import LinguiProvider from "@/components/i18n-provider";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import type React from "react";
 import "./globals.css";
-import LinguiProvider from "@/components/i18n-provider";
 
 export const metadata: Metadata = {
   title: "Tokenist - Enterprise Software Solutions",
@@ -28,9 +29,8 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
-        <LinguiProvider>
-          {children}
-        </LinguiProvider>
+        <LinguiProvider>{children}</LinguiProvider>
+        <Analytics />
       </body>
     </html>
   );

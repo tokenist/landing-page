@@ -1,6 +1,18 @@
 "use client";
 
 import { BackButton } from "@/components/back-button";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { Trans } from "@lingui/react/macro";
 import { motion } from "framer-motion";
 import { CheckCircle, Clock, Mail, Phone, Send } from "lucide-react";
@@ -19,6 +31,9 @@ export default function ContactPage() {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const MotionButton = motion(Button);
+  const MontionCard = motion(Card);
 
   const services = [
     "ERP Solutions",
@@ -226,7 +241,7 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="lg:col-span-2"
             >
-              <div className="bg-card backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg font-sans">
+              <Card className="bg-card backdrop-blur-sm border border-border rounded-2xl p-8 shadow-lg font-sans">
                 {!isSubmitted ? (
                   <>
                     <h3 className="text-2xl font-bold text-foreground mb-6">
@@ -242,13 +257,13 @@ export default function ContactPage() {
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid md:grid-cols-2 gap-4">
                         <div>
-                          <label
+                          <Label
                             htmlFor="name"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
                             <Trans>Full Name *</Trans>
-                          </label>
-                          <input
+                          </Label>
+                          <Input
                             type="text"
                             id="name"
                             name="name"
@@ -260,13 +275,13 @@ export default function ContactPage() {
                           />
                         </div>
                         <div>
-                          <label
+                          <Label
                             htmlFor="email"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
                             <Trans>Email Address *</Trans>
-                          </label>
-                          <input
+                          </Label>
+                          <Input
                             type="email"
                             id="email"
                             name="email"
@@ -281,13 +296,13 @@ export default function ContactPage() {
 
                       <div className="grid md:grid-cols-2 gap-4">
                         <div>
-                          <label
+                          <Label
                             htmlFor="company"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
                             <Trans>Company Name</Trans>
-                          </label>
-                          <input
+                          </Label>
+                          <Input
                             type="text"
                             id="company"
                             name="company"
@@ -298,13 +313,13 @@ export default function ContactPage() {
                           />
                         </div>
                         <div>
-                          <label
+                          <Label
                             htmlFor="phone"
                             className="block text-sm font-medium text-foreground mb-2"
                           >
                             <Trans>Phone Number</Trans>
-                          </label>
-                          <input
+                          </Label>
+                          <Input
                             type="tel"
                             id="phone"
                             name="phone"
@@ -317,42 +332,36 @@ export default function ContactPage() {
                       </div>
 
                       <div>
-                        <label
+                        <Label
                           htmlFor="service"
                           className="block text-sm font-medium text-foreground mb-2"
                         >
                           <Trans>Service of Interest</Trans>
-                        </label>
-                        <select
-                          id="service"
-                          name="service"
-                          value={formData.service}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 bg-input border border-border rounded-lg text-foreground focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/50 transition-colors"
-                        >
-                          <option value="" className="bg-background">
-                            <Trans>Select a service</Trans>
-                          </option>
-                          {services.map((service) => (
-                            <option
-                              key={service}
-                              value={service}
-                              className="bg-background"
-                            >
-                              <Trans>{service}</Trans>
-                            </option>
-                          ))}
-                        </select>
+                        </Label>
+                        <Select>
+                          <SelectTrigger className="w-full">
+                            <SelectValue
+                              placeholder={<Trans>Select a service</Trans>}
+                            />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {services.map((s) => (
+                              <SelectItem key={s} value={s}>
+                                <Trans>{s}</Trans>
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
                       </div>
 
                       <div>
-                        <label
+                        <Label
                           htmlFor="message"
                           className="block text-sm font-medium text-foreground mb-2"
                         >
                           <Trans>Project Details *</Trans>
-                        </label>
-                        <textarea
+                        </Label>
+                        <Textarea
                           id="message"
                           name="message"
                           value={formData.message}
@@ -364,12 +373,12 @@ export default function ContactPage() {
                         />
                       </div>
 
-                      <motion.button
+                      <MotionButton
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-gradient-to-r from-accent to-accent/80 text-accent-foreground font-medium py-4 px-6 rounded-lg shadow-lg shadow-accent/25 hover:shadow-accent/40 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full bg-gradient-to-r from-accent to-accent/80 text-accent-foreground font-medium py-4 px-6 rounded-sm shadow-lg shadow-accent/25 hover:shadow-accent/40 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                       >
                         {isSubmitting ? (
                           <>
@@ -382,7 +391,7 @@ export default function ContactPage() {
                             <Trans>Send Message</Trans>
                           </>
                         )}
-                      </motion.button>
+                      </MotionButton>
                     </form>
                   </>
                 ) : (
@@ -409,7 +418,7 @@ export default function ContactPage() {
                     </div>
                   </motion.div>
                 )}
-              </div>
+              </Card>
             </motion.div>
           </div>
         </div>

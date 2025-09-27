@@ -74,8 +74,9 @@ export default function Home() {
         </Link>
 
         <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-muted-foreground transition duration-200 hover:text-foreground md:flex md:space-x-2">
-          <button
-            className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+          <Button
+            className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer hover:no-underline"
+            variant="link"
             onClick={(e) => {
               e.preventDefault();
               const element = document.getElementById("services");
@@ -95,7 +96,7 @@ export default function Home() {
             <span className="relative z-20">
               <Trans>Services</Trans>
             </span>
-          </button>
+          </Button>
           <Link
             href="/erp"
             className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
@@ -104,8 +105,9 @@ export default function Home() {
               <Trans>ERP</Trans>
             </span>
           </Link>
-          <button
-            className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+          <Button
+            className="relative px-4 py-2 text-muted-foreground hover:text-foreground transition-colors cursor-pointer hover:no-underline"
+            variant="link"
             onClick={(e) => {
               e.preventDefault();
               const element = document.getElementById("contact");
@@ -125,7 +127,7 @@ export default function Home() {
             <span className="relative z-20">
               <Trans>Contact</Trans>
             </span>
-          </button>
+          </Button>
         </div>
 
         <div className="flex items-center gap-4">

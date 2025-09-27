@@ -28,8 +28,12 @@ msgid "{feature}"
 msgstr "{feature}"
 
 #: app/contact/page.tsx
-msgid "{service}"
-msgstr "{service}"
+msgid "{s}"
+msgstr "{s}"
+
+#: app/contact/page.tsx
+#~ msgid "{service}"
+#~ msgstr "{service}"
 
 #: app/contact/page.tsx
 msgid "24/7 support and maintenance"
